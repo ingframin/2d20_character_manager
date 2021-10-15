@@ -1,6 +1,6 @@
 """ Character creation """
 import json
-from attribute import *
+from model.attribute import *
 
 
 data = json.load(open('attributes_and_skills_MC3.json'))

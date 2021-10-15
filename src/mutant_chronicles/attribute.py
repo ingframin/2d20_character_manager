@@ -1,11 +1,15 @@
 from dataclasses import dataclass
+from enum import Enum
+
+
 
 @dataclass
 class Skill:
     name: str
-    value:int
+    expertise: int
     signature: bool
-    
+    focus: int
+
 @dataclass
 class Attribute:
     name: str

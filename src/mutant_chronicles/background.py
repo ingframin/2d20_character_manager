@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from mutant_chronicles.faction import Faction
+from faction import Faction
 
 @dataclass
 class Background:

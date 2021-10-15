@@ -1,11 +1,10 @@
 from dataclasses import dataclass, field
 
-from mutant_chronicles.background import Background
-from .faction import Faction
-from .attribute import Attribute, Skill
-from .talent import Talent
-from .background import Background
-from .spell import Spell
+from background import Background
+from faction import Faction
+from attribute import Attribute, Skill
+from talent import Talent
+from spell import Spell
 
 @dataclass
 class Character:
@@ -22,3 +21,5 @@ class Character:
     belongings: list = field(default_factory=list)
     background: Background = None
     spells: list[Spell] = None
+
+

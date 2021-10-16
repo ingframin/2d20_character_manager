@@ -1,18 +1,29 @@
 """ Character creation """
-import json
-from model.attribute import *
+class SumTooHigh(Exception):
+    pass
 
 
-data = json.load(open('attributes_and_skills_MC3.json'))
-attributes = []
+def decision_one(attributes,mods):
+    s = sum(attributes.values())
+    for m,v in mods:
+        attributes[m] = v
+    
+    ver = sum(attributes.values())
 
-for d in data:
-    for k in d:
-        attributes.append(Attribute(k,0,[]))
-        for at in d[k]:
-            attributes[-1].skills.append(Skill(at,0,False,0))
+    if ver != s:
+        err = f"Sum of attributes should be {s}:\n {attributes} \n Sum: {ver}" 
+        raise SumTooHigh(err)
+    
+    for a in attributes:
+        if attributes[a] > 6:
+            raise ValueError(f"{a}: {attributes[a]}->Too high")
+        elif attributes[a] < 4:
+            raise ValueError(f"{a}: {attributes[a]}->Too low")
+            
+    return attributes
 
-print(attributes[-1])
+
+
 
 
 

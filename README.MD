@@ -1,4 +1,4 @@
-# Mutant Chroniclse Character creation tool #
+# Mutant Chronicles Character creation tool #
 This repository is for the design and development of a character creation tool for 
 the Mutant Chronicles 3rd edition RPG.
 The game is designed by Modiphius which holds the copyright on it and the 2d20 systems.

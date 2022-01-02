@@ -22,6 +22,9 @@ corporations = {
     6: "Whitestar"
 }
 
+
+
+
 def decision1_1(attributes, increase_list, reduce_list):
     # Magic numbers are bad, however, since we focus on MC3, I am living them there.
     # I'll refactor this in a more flexible manner if we need to adapt the generator to other systems.
@@ -44,13 +47,18 @@ def decision1_2(attributes, inc_list, life_points):
 def decision2_1():
     d = roll(1,d6)
     if d < 4:
-        return factions[d]
+        return (factions[d], corporations[d6()])
     
-    return corporations[d6()] 
+    return (corporations[d6()], None) 
+
+def decision2_2():
+    pass
+
+def decision2_3():
+    pass
 
 
-
-def run():
+def run_test():
     talents = []
     life_points = 5
     #Starting attributes
@@ -71,7 +79,7 @@ def run():
     increase_list = []
     decrease_list = []
 
-    print("Decision 1:")
+    print("Decision 1.1:")
     
     while True:
         instr = input(">>")
@@ -89,9 +97,26 @@ def run():
             print("unknown attribute")
     
     decision1_1(attributes, increase_list, decrease_list)
+    print("Decision 1.2:")
+    
+    while True:
+        instr = input(">>")
+        if instr == 'stop':
+            break
+        isplit = instr.split()
+        if isplit[1] in attr_names:
+            if isplit[0] == 'inc':
+                increase_list.append(isplit[1])
+            elif isplit[0] == 'dec':
+                decrease_list.append(isplit[1])
+            else:
+                print("unknown command")
+        else:
+            print("unknown attribute")
+    decision1_2(attributes, increase_list, life_points)
     print(attributes)
 
         
 
 if __name__ == '__main__':
-    run()
+    run_test()

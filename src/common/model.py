@@ -1,15 +1,16 @@
 from dataclasses import dataclass
+from enum import Enum
 
 @dataclass
-class Attributes:
-    agility: int
-    awareness: int
-    coordination: int
-    intelligence: int
-    mental: int
-    personality: int
-    physique: int 
-    strength: int
+class Attribute:
+    name: str
+    value: int
+
+    def increase(self):
+        self.value += 1
+    
+    def decrease(self):
+        self.value -= 1
 
 @dataclass
 class Skill:

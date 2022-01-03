@@ -25,6 +25,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
+    width: 250px;
   }
 
   button:hover {

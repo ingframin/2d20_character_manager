@@ -10,6 +10,10 @@ class Start:
     def index(self):
         home = Template(filename='./templates/begin.html')
         return home.render()
+    
+    @cherrypy.expose
+    def decision1(self,method='standard'):
+        return "Hello World"
 
 
 conf = {

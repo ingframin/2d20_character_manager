@@ -1,10 +1,6 @@
 from dices import *
 from model import *
 
-
-
-
-
 #Again... these should be loaded from the database
 
 factions = {

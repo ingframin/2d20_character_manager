@@ -18,21 +18,13 @@ class Start:
         if len(kwargs) == 0:
             cherrypy.log(str(cherrypy.session))
             return dec1.render()
-        else:
-            try:
-                sum = 40
-                for k in kwargs:
-                    val = int(kwargs[k])
-                    sum -= val
-                    cherrypy.session[k]=kwargs[k]
-                cherrypy.log(f"sum={sum}")
-                if sum != 0:
-                    return cherrypy.session['test']
-            except:
+        else:                
+            for k in kwargs:
+                val = int(kwargs[k])
+                cherrypy.session[k]=kwargs[k]
                 
-                return dec1.render()
-
-            cherrypy.log(str(kwargs))
+            
+        # to be continued...    
         return "ok" 
         
 

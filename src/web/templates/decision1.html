@@ -6,61 +6,98 @@
         <link rel="stylesheet" href="static/assets/style.css">
     </head>
     <body>
-        <!--Form validation missing!-->
+        
         <h1>Decision 1: Starting characteristics</h1>
-        <form name="attribs" action="decision1" method="post">
+        <div id="error"></div>
+        <form id="attribs" name="attribs" action="decision1" method="post">
             <div class="grid-container">
                 <div class="grid-item">
                     <label for="agility">Agility:</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" id="agility" name="agility" value="5"></br>
+                    <input class="form-in"  type="number" id="agility" name="agility" value="5"  onchange="validateVal(this)"></br>
                 </div>
                 <div class="grid-item">
                     <label for="awareness">Awareness:</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" id="awareness" name="awareness" value="5"></br>
+                    <input class="form-in"  type="number" id="awareness" name="awareness" value="5" onchange="validateVal(this)"></br>
                 </div>
                 <div class="grid-item">
                     <label for="coordination">Coordination:</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" id="coordination" name="coordination" value="5"></br>
+                    <input class="form-in"  type="number" id="coordination" name="coordination" value="5" onchange="validateVal(this)"></br>
                 </div>
                 <div class="grid-item">
                     <label for="intelligence">Intelligence:</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" id="intelligence" name="intelligence" value="5"></br>
+                    <input class="form-in"  type="number" id="intelligence" name="intelligence" value="5" onchange="validateVal(this)"></br>
                 </div>
                 <div class="grid-item">
                     <label for="mental">Mental:</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" id="mental" name="mental" value="5"></br>
+                    <input class="form-in"  type="number" id="mental" name="mental" value="5" onchange="validateVal(this)"></br>
                 </div>
                 <div class="grid-item">
                     <label for="personality">Personality:</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" id="personality" name="personality" value="5"></br>
+                    <input class="form-in" type="number" id="personality" name="personality" value="5" onchange="validateVal(this)"></br>
                 </div>
                 <div class="grid-item">
                     <label for="physique">Physique:</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" id="physique" name="physique" value="5"></br>
+                    <input class="form-in"  type="number" id="physique" name="physique" value="5" onchange="validateVal(this)"></br>
                 </div>
                 <div class="grid-item">
                     <label for="strength">Strength:</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" id="strength" name="strength" value="5"></br>
+                    <input class="form-in" type="number" id="strength" name="strength" value="5" onchange="validateVal(this)"></br>
                 </div>
             </div>
-            <input type="submit" value="OK">
+            <input type="button" value="OK" onclick="checkAndSubmit()">
         </form>
+        
     </body>
+    <script>
+        function validateVal(elem){
+            let x = parseInt(elem.value);
+            if(x > 6){
+                elem.value = 6;
+            }
+            else if(x<4){
+                elem.value = 4;
+            }
+        }
+        function checkAndSubmit(){
+            var abs = document.getElementsByClassName("form-in");
+            var sum = 0;
+            for(i =0; i< abs.length; i++){
+
+                sum += parseInt(abs[i].value);
+            }
+            if(sum == 40){
+                var element = document.getElementById("error");
+                element.style.backgroundColor = '#000000';
+                
+                element.innerHTML = '<font color="00FF00" align="center"><b>Success!</b></font>'
+                document.getElementById("attribs").submit();
+            }
+            else{
+                var element = document.getElementById("error");
+                element.style.backgroundColor = 'yellow';
+                element.style.textAlign = "center";
+                element.style.color = "red"
+                element.style.fontSize = "30px"
+                element.innerHTML = 'Error: the sum of all attributes must be 40!'
+
+            }
+        }
+    </script>
 
 </html>

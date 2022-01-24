@@ -9,7 +9,7 @@
         
         <h1>Decision 1: Starting characteristics</h1>
         <div id="error"></div>
-        <form id="attribs" name="attribs" action="decision1" method="post">
+        <form id="attribs" name="attribs">
             <div class="grid-container">
                 <div class="grid-item">
                     <label for="agility">Agility:</label>
@@ -74,29 +74,36 @@
                 elem.value = 4;
             }
         }
-        function checkAndSubmit(){
-            var abs = document.getElementsByClassName("form-in");
-            var sum = 0;
-            for(i =0; i< abs.length; i++){
 
-                sum += parseInt(abs[i].value);
-            }
-            if(sum == 40){
-                var element = document.getElementById("error");
-                element.style.backgroundColor = '#000000';
+        function checkAndSubmit(){
+            let formContent = document.getElementById("attribs");
+            let formData = new FormData(formContent);
+            var sum = 0;
+
+            formData.forEach(function(value, key){
                 
-                element.innerHTML = '<font color="00FF00" align="center"><b>Success!</b></font>'
-                document.getElementById("attribs").submit();
-            }
-            else{
+                sum += parseInt(value);
+                }
+                );
+            console.log(sum);
+            if(sum < 40 || sum > 45){
                 var element = document.getElementById("error");
                 element.style.backgroundColor = 'yellow';
                 element.style.textAlign = "center";
                 element.style.color = "red"
-                element.style.fontSize = "30px"
-                element.innerHTML = 'Error: the sum of all attributes must be 40!'
-
+                element.style.fontSize = "20px"
+                element.innerHTML = 'Error: the sum of all attributes must be between 40 and 45!'
+                return
             }
+
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("error").innerHTML = this.responseText;
+                }
+            xhttp.open("POST", "update_session", true);
+            xhttp.send(formData);
+            window.open("decision2","_self")
+            
         }
     </script>
 

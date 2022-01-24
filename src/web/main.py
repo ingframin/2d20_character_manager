@@ -13,21 +13,31 @@ class Start:
         return home.render()
     
     @cherrypy.expose
-    def decision1(self,**kwargs):
-        dec1 = Template(filename='templates/decision1.html')
-        if len(kwargs) == 0:
-            cherrypy.log(str(cherrypy.session))
-            return dec1.render()
-        else:                
+    def update_session(self,**kwargs):
+        print(kwargs)
+        try:
             for k in kwargs:
                 val = int(kwargs[k])
                 cherrypy.session[k]=kwargs[k]
-                
-            
-        # to be continued...    
-        return "ok" 
+        except:
+            #There should be different kind of errors
+            #TBD
+            return "Error"
         
+        return "OK"
 
+    @cherrypy.expose
+    def decision1(self,**kwargs):
+        dec1 = Template(filename='templates/decision1.html')
+           
+        return dec1.render()
+
+    @cherrypy.expose   
+    def decision2(self,**kwargs):
+        dec2 = Template(filename='templates/decision2.html')
+           
+        return dec2.render()
+        
 
 conf = {
         '/': {

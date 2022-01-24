@@ -9,3 +9,4 @@ This software is a fan made program: I have no relation with Modiphius nor the c
 ## Dependencies
 - Cherrypy
 - PyOpenSSL
+- Mako

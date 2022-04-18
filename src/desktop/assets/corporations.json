@@ -1,0 +1,13 @@
+
+[
+    {"id":1, "name":"Mishima","langugages":["Mishima","Luna Patois"],"skills":["Close Combat", "Unarmed Combat"], "Talent":"Citizen/Vassal of Mishima"},
+    {"id":2, "name":"Capitol","langugages":["Capitol","Luna Patois"],"skills":["Ranged Weapons", "Persuade"], "Talent":"Citizen/Shareholder of Capitol"},
+    {"id":3, "name":"Bauhaus","langugages":["Bauhaus","Luna Patois"],"skills":["Mechanics", "Lifestyle"], "Talent":"Citizen/Subject of Bauhaus"},
+    {"id":4, "name":"Imperial","langugages":["Imperial","Luna Patois"],"skills":["Ranged Weapons", "Pilot"], "Talent":"Citizen/Kinsman of Imperial"},
+    {"id":5, "name":"Cybertronic","langugages":["Bauhaus","Luna Patois"],"skills":["Sciences", "Stealth"], "Talent":"Citizen/Agent of Cybertronic"},
+    {"id":6, "name":"Whitestar","langugages":["Russomandarin","Luna Patois"],"skills":["Survival", "Resistance"], "Talent":"Citizen/Comrade of Whitestar"},
+    {"id":7, "name":"Freelancer", "langugages":["Luna Patois","Heritage"],"skills":["Thievery","Education","Heritage"],"Talent":"Under the radar"},
+    {"id":8, "name":"Criminal", "langugages":["Luna Patois","Heritage"],"skills":["Thievery","Heritage"],"Talent":"Under the radar"},
+    {"id":9, "name":"Microcorp", "langugages":["Luna Patois","Heritage"],"skills":["Lifestyle","Heritage"],"Talent":"Under the radar"}
+
+]

@@ -2,9 +2,9 @@ import cherrypy
 from mako.template import Template
 import os
 from generator import *
-"""
-This is just a stub
-"""
+
+# This should be migrated to a more capable framework such as Django.
+
 class Start:
     @cherrypy.expose
     def index(self):
@@ -25,7 +25,8 @@ class Start:
             return "Error"
         
         return "OK"
-
+    
+    # This can be a single function with different arguments
     @cherrypy.expose
     def decision1(self,**kwargs):
         dec1 = Template(filename='templates/decision1.html')

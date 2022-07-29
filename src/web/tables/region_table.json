@@ -1,0 +1,57 @@
+[
+    {
+        "Environment":"Luna City",
+        "Mishima":"Tai-Show Industrial Port or Cherry Blossom District",
+        "Bauhaus":"Gotland or The Nines",
+        "Imperial":"The Smokes",
+        "Capitol":"Lesser Mars (around base of Pinnacle) or Southside",
+        "Cybertronic":"The Cybertronic Building",
+        "Whitestar":"Whitestar Bunker on Luna"
+    },
+    {
+        "Environment":"Heritage world",
+        "Mishima":"Mercury",
+        "Bauhaus":"Venus – Heimburg",
+        "Imperial":"Victoria (Asteroid Belt)",
+        "Capitol":"Mars (San Dorado Capitol City)",
+        "Cybertronic":"Ganymede",
+        "Whitestar":"Earth – Siberia"
+    },
+    {
+        "Environment":"Heritage foothold",
+        "Mishima":"Mars, Hosokawa, or Sensomachi",
+        "Bauhaus":"Mundburg on Mars, or the Bauhausian quarter in San Dorado",
+        "Imperial":"Fukido (Mercury)",
+        "Capitol":"Venus – Graveton Archipelago, Mercury – Longshore or Fukido",
+        "Cybertronic":"Recruited from other Corp Foothold – roll for original faction in Decision 2 (Heritage Table). You are from that faction’s Foothold",
+        "Whitestar":"Earth – Central Europe"
+    },
+    {
+        "Environment":"Heritage hotspot",
+        "Mishima":"Venus, Quan",
+        "Bauhaus":"Venus – Graveton Archipelago and isolated settlements",
+        "Imperial":"Ganymede or Titan",
+        "Capitol":"The Doughpits, or The Southern Lands",
+        "Cybertronic":"Recruited from other Corp Foothold – roll for original faction in Decision 2 (Heritage Table). You are from that faction’s Foothold",
+        "Whitestar":"Frontier Fort or Bunker"
+    },
+    {
+        "Environment":"Orbital or minor heritage location",
+        "Mishima":"Southern Banners (Mars) / Luna",
+        "Bauhaus":"Triumvar, Novakursk, Torburg",
+        "Imperial":"Diemansland or Trojans",
+        "Capitol":"Eos, Peacekeeper Station and orbital naval yard, Longshore or Fukido on Mercury",
+        "Cybertronic":"Secret Trojan location or Asteroid facility",
+        "Whitestar":"Luna monitoring station"
+    },
+    {
+        "Environment":"Sequestered",
+        "Mishima":"Sages Temple",
+        "Bauhaus":"Asteroid Estate, Research outpost",
+        "Imperial":"Clan Fortress or Estate",
+        "Capitol":"The Great Rust Desert, home of Nomad tribes",
+        "Cybertronic":"Cyberopolis (knows little of outside world)",
+        "Whitestar":"Central Bunkers"
+    }
+
+]

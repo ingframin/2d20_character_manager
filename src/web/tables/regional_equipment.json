@@ -1,0 +1,26 @@
+[
+    {
+        "Environment":"Luna City",
+        "Equipment":"A basic urban survival kit (poncho for acid rain, air filter mask etc)"
+    },
+    {
+        "Environment":"Heritage world",
+        "Equipment":"A favour owed by a connection in your own faction."
+    },
+    {
+        "Environment":"Heritage foothold",
+        "Equipment":"A basic survival kit for your region or a basic medkit."
+    },
+    {
+        "Environment":"Heritage hotspot",
+        "Equipment":"Either a heavy civilian shoulder pad or a corporation-appropriate handgun or a basic medkit."
+    },
+    {
+        "Environment":"Orbital or minor heritage location",
+        "Equipment":"A vacuum suit or colonial survival kit for your region."
+    },
+    {
+        "Environment":"Sequestered",
+        "Equipment":"High society clothing, a notable object of personal significance (relic, piece of art etc), a meditation room and a personal library."
+    }
+]

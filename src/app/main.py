@@ -1,31 +1,18 @@
-import cherrypy
-import os
-import webview
+import PySimpleGUI as sg
 
+sg.theme('DarkAmber')   # Add a touch of color
+# All the stuff inside your window.
+layout = [  [sg.Text('Some text on Row 1')],
+            [sg.Text('Enter something on Row 2'), sg.InputText()],
+            [sg.Button('Ok'), sg.Button('Cancel')] ]
 
-conf = {
-        '/': {
-            'tools.sessions.on': True,
-            'tools.staticdir.root': os.path.abspath(os.getcwd())
-        },
-        '/assets': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': './assets'
-        }
-    }
+# Create the Window
+window = sg.Window('Window Title', layout)
+# Event Loop to process "events" and get the "values" of the inputs
+while True:
+    event, values = window.read()
+    if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
+        break
+    print('You entered ', values[0])
 
-class CharacterGenerator:
-
-    @cherrypy.expose
-    def begin(self):
-        return 'Hello World!'
-
-website = CharacterGenerator()
-
-webview.create_window('Hello world', 'http://127.0.0.1:8080/assets/begin.html')
-webview.start(cherrypy.quickstart,(website,'/',conf))
-print('exit')
-cherrypy.server.stop()
-cherrypy.engine.stop()
-cherrypy.engine.exit()
-exit(0)
+window.close()

@@ -1,0 +1,47 @@
+[
+    {
+        "status":"Unemployed Underclass",
+        "Items of Interest":["A battered pack of cards","several worn paperback novels",
+        "a postcard from Luna","a battered hip flask"],
+        "Apparel":"Basic, threadbare, and dirty clothing",
+        "Rented Lodgins":"A single room with no view in a dilapidated tenement in the slums"
+    },
+    {
+        "status":"Employed Underclass",
+        "Items of Interest":["A mini-torch","pocket knife (slicer)","a lighter",
+        "a military issue wristwatch", "set of polished military boots", "travel pass"],
+        "Apparel":"Basic, patched and mended second-hand clothing.",
+        "Rented Lodgins":"A single room with no view in an overcrowded employee boarding house"
+    },
+    {
+        "status":"Working Lower",
+        "Items of Interest":["Third Place sports trophy","work goggles with one cracked lens",
+        "your dad’s old wrench","a video of your grandfather meeting someone important", 
+        "a cabin class ticket to Luna – 50% paid", "a fast food chain discount card",
+        "several sets of military dog tags"],
+        "Apparel":"Basic, well-worn clothing, some of which is new",
+        "Rented Lodgins":"A small suburban apartment in a quiet part of town"
+    },
+    {
+        "status":"Working Middle",
+        "Items of Interest":["Employee of the Month mug","shiny belt buckle with your faction’s logo",
+        "lifetime subscription to TV channel package","a mini-torch"],
+        "Apparel":"A modest wardrobe of respectable clothing",
+        "Rented Lodgins":"A small apartment in the centre of the city"
+    },
+    {
+        "status":"Upper",
+        "Items of Interest":["Statuette of someone famous","VIP card from a flashy casino or club",
+        "faction appropriate officer’s sword from a grandparent","a family portrait"],
+        "Apparel":"A large wardrobe of stylish, fashionable clothing",
+        "Rented Lodgins":"A large apartment in an exclusive tenement, in the centre of the city"
+    },
+    {
+        "status":"Elite",
+        "Items of Interest":["An heirloom rifle hung over the fireplace","a globe of your faction’s homeworld made of platinum and gems",
+        "a ceremonial suit or uniform worn by a celebrated member of the family","a bottle of very ancient brandy","a gilded holy icon"],
+        "Apparel":"An extensive wardrobe of bespoke-tailored, ultra-fashionable clothing",
+        "Rented Lodgins":"A lavish apartment in the most exclusive complex in the most expensive part of the city"
+    }
+
+]

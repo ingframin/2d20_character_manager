@@ -1,0 +1,38 @@
+[
+    {
+        "roll":1,
+        "A":"Grew Up On The Streets",
+        "B":"Technical Pre-Career Training",
+        "C":"Post Graduate Technical"
+    },
+    {
+        "roll":2,
+        "A":"Technical OTJ Training",
+        "B":"Technical Pre-Career Training",
+        "C":"Post Graduate Scientific"
+    },
+    {
+        "roll":3,
+        "A":"Rural/Colonial Education",
+        "B":"Creative Pre-Career Training",
+        "C":"Creative Education"
+    },
+    {
+        "roll":4,
+        "A":"Clerical Education",
+        "B":"Military Academy",
+        "C":"Officer Training"
+    },
+    {
+        "roll":5,
+        "A":"Teenage Draft",
+        "B":"Managerial Experience",
+        "C":"Managerial Education"
+    },
+    {
+        "roll":6,
+        "A":"Pick Result From Table A",
+        "B":"Brotherhood Educated",
+        "C":"Brotherhood Apprenticeship"
+    }
+]

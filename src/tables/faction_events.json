@@ -1,0 +1,52 @@
+[
+{"roll":1, 
+    "Mishima":"A contact in a rival corporation who owes you a favour (roll randomly).",
+    "Capitol":"The business card of a good contact who owes you a favour",
+    "Bauhaus":"A contact in the Brotherhood or Bauhaus who owes you a favour",
+    "Imperial": "A contact in a corporation who owes you significant funds (three assets)",
+    "Cybertronic": "A contact within Cybercurity who owes you a favour",
+    "Whitestar": "A senior contact in  Whitestar who owes you a favour"
+},
+{"roll":2, 
+    "Mishima":"Gain one asset",
+    "Capitol":"Gain one asset",
+    "Bauhaus":"Gain one asset",
+    "Imperial":"Gain one asset",
+    "Cybertronic":"Gain one asset",
+    "Whitestar":"Gain one asset"
+},
+{"roll":3, 
+    "Mishima":"A contact within Mishima that you have blackmail over. Gain a favour and an enemy",
+    "Capitol":"Three business cards from contacts in random corporations (One of these is a secret enemy).",
+    "Bauhaus":"A noble favour has been granted to your house. Using this favour will gain you an enemy in the noble who granted it.",
+    "Imperial":"A contact in another clan or corporation who secretly owes you a favour and hates you for it.",
+    "Cybertronic":"A contact working for your former employer who begrudgingly owes you a favour",
+    "Whitestar":"You have been given proof that one corporation has committed misdeeds against another. Roll two corporations randomly. Either one will grant a favour for the evidence."
+},
+{"roll":4, 
+    "Mishima":"You have family debts and history with a Triad. Gain a one asset debt, but you can make peaceful contact with the Triad at any time and negotiate favours",
+    "Capitol":"You have obtained a gang member as a contact. For purchasing illegal goods you may spend two assets to reduce the Availability by one.",
+    "Bauhaus":"You have a relative in an underground movement who owes you a favour.",
+    "Imperial":"Your family has extensive ties to the criminal networks of multiple corporations. You are owed no favours but can make peaceful contact with any organised crime bod",
+    "Cybertronic":"Your corporate mentor is connected to an illegal augmentation business (and now so are you). Purchasing augmentation is one difficulty rank less than normal.",
+    "Whitestar":"Your clan is involved in the medical labs of the Tsarina and the criminal exploitation of its discoveries. While most gangs will not have heard of you, you can make peaceful contact with senior members of organised crime."
+},
+{"roll":5,
+    "Mishima":"A Mishiman family has declared war against your family. This family is of equal status to your own. The war may not be legal, but its best to avoid them where possible.",
+    "Capitol":"People still remember what your uncle did and you have had to change your surname. Some of the family’s enemies still turn up from time to time.",
+    "Bauhaus":"Your family has run afoul of an inquisitor and is under investigation.",
+    "Imperial":"A family enemy in a rival corporation (roll randomly).",
+    "Cybertronic": "A personal enemy in a rival corporation (1-4 Imperial, 5-6 random).",
+    "Whitestar": "Your homeland still bears the scars of the corporate exodus. Your public comments have made an enemy in Bauhaus."
+},
+{"roll":6,
+    "Mishima":"Your Leige lord has favoured you with extensive assets. Gain five assets, which you must spend on a single item. If you use this on purchasing a Mishiman weapon or armour, you may improve its usual reliability by one.",
+    "Capitol":"An office to collect your thoughts in (rent on a small office is paid for the next two months).",
+    "Bauhaus":"A proud family line. Gain a cape, a heavy Civilain shoulderpad with your family crest and a faux cresthelm (armour 0). If you purchase a helmet you may later merge the faux cresthelm with this helmet for free",
+    "Imperial":"Your grandfather’s pistol. While not strictly legal, your family has kept an Old Aggressor pistol that has been handed down to you.",
+    "Cybertronic": "Cybernetic enhancement. A SARaH system has been implanted in your upper spine.",
+    "Whitestar":"Gain your choice of a basic survival kit suitable for Dark Eden’s irradiated coldland, or a set of night vision goggles"
+
+}
+
+]

@@ -2,6 +2,8 @@ package mc3.main;
 
 import javax.swing.SwingUtilities;
 
+import mc3.gui.MainFrame;
+
 
 public class CharGen{
 

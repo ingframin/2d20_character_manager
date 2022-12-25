@@ -1,4 +1,4 @@
-package mc3.main;
+package mc3.gui;
 
 import javax.swing.*;
 import static javax.swing.GroupLayout.Alignment.LEADING;

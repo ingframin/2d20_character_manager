@@ -1,4 +1,4 @@
-package mc3.main;
+package mc3.gui;
 import java.awt.Dimension;
 import java.util.HashMap;
 import javax.swing.*;

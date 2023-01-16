@@ -1,5 +1,6 @@
 package mc3.gui;
 
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -7,12 +8,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextPane;
 import javax.swing.plaf.InsetsUIResource;
 import javax.swing.text.SimpleAttributeSet;
-
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.awt.Font;
 import java.util.HashMap;
 import java.awt.Color;
@@ -20,16 +18,25 @@ import java.awt.Dimension;
 
 public class StartScreen extends JPanel{
 
-    HashMap<String,JButton> buttons;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2L;
+	HashMap<String,JButton> buttons;
 
     public StartScreen(){
         super();
         buttons = new HashMap<>();
-        buildUI();
+        try {
+			buildUI();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         addCopyrightNote();
     }
 
-    private void buildUI(){
+    private void buildUI() throws IOException{
         var wheight = getHeight();
         var wwidth = getWidth();
         this.setBounds(10,20,wwidth-10,wheight+10);
@@ -39,8 +46,9 @@ public class StartScreen extends JPanel{
         brdl.setHgap(10);
         //Load and show logo
         this.setBackground(new Color(0x373633));
-        var logo = new ImageIcon("./visual/logo.png");
-        var image = logo.getImage(); 
+        var image = ImageIO.read(ClassLoader.getSystemResourceAsStream("logo.png"));
+        
+//        var image = logo.getImage(); 
         int width = image.getWidth(null);
         int height = image.getHeight(null);
         var newimg = image.getScaledInstance(width/4, height/4,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
@@ -104,7 +112,9 @@ public class StartScreen extends JPanel{
         //Add disclaimer label
         String disc = "";
         try {
-            disc = new String(Files.readAllBytes(Paths.get("visual/copyright.html")));
+        	var reader = ClassLoader.getSystemResourceAsStream("copyright.html");
+        	
+            disc = new String(reader.readAllBytes());
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

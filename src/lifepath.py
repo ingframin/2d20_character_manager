@@ -56,6 +56,7 @@ def lifepath():
             if 'Heritage' in languages:
                 languages.remove('Heritage')
                 languages.append(heritage)
+    print(talent,languages)
     
 
             

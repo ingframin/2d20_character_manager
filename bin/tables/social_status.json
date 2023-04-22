@@ -1,0 +1,9 @@
+[
+    {"roll":[2],"status":"Unemployed Underclass","Attribute Bonus":["Strength","Agility"],"skills":["Close combat"],"earnings":0},
+    {"roll":[3,4,5],"status":"Employed Underclass","Attribute Bonus":["Physique","Strength"],"skills":["Survival"],"earnings":1},
+    {"roll":[6,7,8],"status":"Working Lower","Attribute Bonus":["Physique","Strength"],"skills":["Resistance"],"earnings":2},
+    {"roll":[9,10],"status":"Working Middle","Attribute Bonus":["Physique","Personality"],"skills":["Observation"],"earnings":3},
+    {"roll":[11],"status":"Upper","Attribute Bonus":["Mental Strength","Personality"],"skills":["Lifestyle"],"earnings":4},
+    {"roll":[12],"status":"Elite","Attribute Bonus":["Mental Strength","Personality"],"skills":["Persuade"],"earnings":5}
+    
+]

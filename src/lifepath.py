@@ -1,4 +1,4 @@
-from dices import *
+from dice import *
 from attribs import *
 from factions import *
 from random import choice
@@ -28,37 +28,18 @@ def lifepath():
     #Decision 2 - Birth Faction
     #Step 1
     fac_herit = load_factions('./tables/factions_heritage.json')
-    faction = None
-    heritage = None
-    rnd6 = d6()
-    match rnd6:
-        case 1: 
-            faction = 'Freelancer'
-        case 2: 
-            faction = 'Criminal'
-        case 3: 
-            faction = 'Microcorp'
-        case _: 
-            faction = choice([f['name'] for f in fac_herit if f["id"]<7])
-    if rnd6 < 4:
-        heritage = choice([f['name'] for f in fac_herit if f["id"]<7])
-    else:
-        heritage = faction
+    faction, heritage = faction_heritage(fac_herit)
 
     print(faction, heritage)
     #Step 2
-    talent = None
-    languages = None
-    for f in fac_herit:
-        if f['name'] == faction:
-            talent = f['talent']
-            languages = f['languages']
-            if 'Heritage' in languages:
-                languages.remove('Heritage')
-                languages.append(heritage)
-    print(talent,languages)
-    
+    talent,languages,skills = fac_talents_lang_skills(fac_herit, faction, heritage)
 
+    print(talent, languages, skills)
+    if len(skills)>2:
+        print("you can only keep 2 skills and select one as signature")
+    
+    event=load_fact_event('./tables/faction_events.json', heritage)    
+    print(event)
             
         
 

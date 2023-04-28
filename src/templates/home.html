@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Mutant Chronicles 3rd edition - Character Generator</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <p align="center">
+            <img src="{{ url_for('static', filename='logo.png') }}" width="50%"/>
+        </p>
+        <h1>
+            Mutant Chronicles Character Generator
+        </h1>
+        <div id="button-menu">
+            <button onclick="location.href='{{ url_for('standard_generation') }}'" type="button"> Standard method</button>
+            
+            <button onclick="location.href='{{ url_for('points_system') }}'" type="button"> 12 Life Points</button>
+            
+            <button onclick="location.href='{{ url_for('free_character') }}'" type="button"> Free method </button>
+        </div>
+
+        <div class="copyrightnote">
+            <p>
+                Author: Franco Minucci (franco.minucci AT ingframin.eu)<br/>
+                <br/>
+            Character Generator tool for Mutant Chronicles 3rd edition RPG.
+            The game is designed by Modiphius which holds the copyright on it and the 2d20 systems.<br/>
+            MUTANT CHRONICLES and related logos, characters, names, and distinctive likenesses thereof are trademarks or registered trademarks of Mutant Chronicles International Inc.<br/> 
+            All rights reserved.<br/><br/>
+            This software is provided as-is with GPLv3 license (<a href="https://github.com/ingframin/mc3_character_generator">Repository on Github</a>).
+            <br/>
+            This software is a fan made program: I have no relation with Modiphius nor the copyright holders of the Mutant Chronicles franchise.
+            </p>
+        </div>
+
+    </body>
+</html>

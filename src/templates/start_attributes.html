@@ -8,7 +8,7 @@
     <body>
         <h1>Standard Generation</h1>
         <p>Adjust attribute values:</p>
-        <div id="error"></div>
+        <div id="error" color="red">{{error}}</div>
         <form action="" method="POST" id="attribs">
             <div class="grid-container">
                 {% for attribute in attributes %}
@@ -16,7 +16,7 @@
                     <label>{{ attribute.name }}</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" name="{{ attribute.name }}" value="{{ attribute.current_value }}" max="6" min="4"></br>
+                    <input type="number" name="{{ attribute.name }}" value="{{ attribute.value }}" max="6" min="4"></br>
                 </div>
                 {% endfor %}
             </div>
@@ -25,45 +25,5 @@
         </form>
         <p>Total points: {{ total_points }}</p>
     </body>
-    <script>
-        function checkAndSubmit(){
-            let formContent = document.getElementById("attribs");
-            let formData = new FormData(formContent);
-            var sum = 0;
-
-            formData.forEach(function(value, key){
-                sum += parseInt(value);
-            });
-
-            console.log(sum);
-
-            if(sum != 40){
-                var element = document.getElementById("error");
-                element.style.backgroundColor = 'yellow';
-                element.style.textAlign = "center";
-                element.style.color = "red"
-                element.style.fontSize = "20px"
-                element.innerHTML = 'Error: the sum of all attributes must be between 40!'
-                return
-            }
-
-            // convert the form data to JSON format
-            var object = {};
-            formData.forEach(function(value, key){
-                object[key] = value;
-            });
-            var jsonData = JSON.stringify(object);
-
-            const xhttp = new XMLHttpRequest();
-            xhttp.onload = function() {
-                document.getElementById("error").innerHTML = this.responseText;
-            }
-
-            xhttp.open("POST", "{{ url_for('standard_generation') }}");
-            xhttp.setRequestHeader("Content-type", "application/json");
-            xhttp.send(jsonData);
-            
-            window.open("{{ url_for('heritage_faction')}}","_self")
-        }
-    </script>
+    
 </html>

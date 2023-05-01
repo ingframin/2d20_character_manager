@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
+from attribs import *
 import os
 import json
 
@@ -11,22 +12,39 @@ def home():
 
 @app.route("/standard_generation", methods=['GET','POST'])
 def standard_generation():
+    attributes = load_attribs('./tables/attributes.json')
     if request.method == 'POST':
-        update_session(request.get_data())
-    else:
-
-        with open('./tables/attributes.json') as f:
-            attributes = json.load(f)
-        # Set initial values for attributes
-        for attribute in attributes:
-            attribute['current_value'] = attribute['value']
+        new_attribs = request.form.to_dict()
+        checksum = 0
+        for a in new_attribs:
+            
+            if int(new_attribs[a]) < 4 or int(new_attribs[a]) > 6:
+                return redirect(url_for("standard_generation",error="Attributes should be between 4 and 6"))
+            for atr in attributes:
+                if atr.name == a:
+                    atr.value = int(new_attribs[a])
+            checksum += int(new_attribs[a])
+        if checksum != 40:
+            
+            return redirect(url_for("standard_generation",error="The sum of all attributes should be 40!"))
+        print(len(attributes))
+        update_session(attributes)
+        return redirect(url_for("heritage_faction"))
         
+    else:         
+        try:
+            ercode = f"Error: {request.args['error'] }"
+        except:
+            ercode = ''
         # Render template with attributes and initial values
-        return render_template('start_attributes.html', attributes=attributes)
+        return render_template('start_attributes.html', attributes=attributes, error=ercode)
 
 
 def update_session(data):
-    print(data)
+    for d in data:
+        print(f'{d.name}: {d.value}')
+    
+    return "done"
 
 @app.route("/heritage_faction")
 def heritage_faction():

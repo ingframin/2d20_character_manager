@@ -14,7 +14,31 @@
                 <td id="heritage">Heritage: <b>{{heritage}}</b></td>
             </tr>
         </table>
-        
+        <h2>Available Skills</h2>
+        <form id="skills">
+            <div id="skills" class="grid-container3">
+                <div class="grid-item">
+                    <label><b>Skill</b></label>
+                </div>
+                <div class="grid-item">
+                    <label><b>Expertise</b></label>
+                </div>
+                <div class="grid-item">
+                    <label><b>Focus</b></label>
+                </div>
+                {% for s in skills%}
+                <div class="grid-item">
+                    <label>{{s.name}}</label>
+                </div>
+                <div class="grid-item">
+                    <input type="number" name="{{s.name}}_exp" value="{{ s.expertise }}" max="1" min="0">
+                </div>
+                <div class="grid-item">
+                    <input type="number" name="{{s.name}}_foc" value="{{ s.focus }}" max="1" min="0">
+                </div>
+                {% endfor %}
+            </div>
+        </form>
         
     </body>
 </html>

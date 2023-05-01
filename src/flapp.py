@@ -48,9 +48,14 @@ def standard_generation():
 def heritage_faction():
 
     fac_herit = load_factions('./tables/factions_heritage.json')
-    faction, heritage = faction_heritage(fac_herit)
-    character['faction'] = faction
-    character['heritage'] = heritage
+    if 'faction' not in character.keys() or 'heritage' not in character.keys():
+        faction, heritage = faction_heritage(fac_herit)
+        character['faction'] = faction
+        character['heritage'] = heritage
+    else:
+        faction = character['faction']
+        heritage = character['heritage']
+    
     talent,languages,skills = fac_talents_lang_skills(fac_herit, faction, heritage)
     character['talents'] = [talent]
     print(talent, languages, skills)
@@ -59,7 +64,7 @@ def heritage_faction():
     
     event=load_fact_event('./tables/faction_events.json', heritage)    
     print(event)
-    return render_template('faction_heritage.html',faction = faction, heritage = heritage)
+    return render_template('faction_heritage.html',faction = faction, heritage = heritage, skills=skills)
 
 @app.route("/points_system")
 def points_system():

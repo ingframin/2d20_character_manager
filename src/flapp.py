@@ -1,10 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 from attribs import *
+from factions import *
 import os
 import json
 
 app = Flask(__name__,template_folder='templates',static_folder='assets')
 app.config["DATA_DIR"] = os.path.join(os.getcwd(), "tables")
+
+character = {}
 
 @app.route("/")
 def home():
@@ -27,8 +30,8 @@ def standard_generation():
         if checksum != 40:
             
             return redirect(url_for("standard_generation",error="The sum of all attributes should be 40!"))
-        print(len(attributes))
-        update_session(attributes)
+        
+        character['attribs'] = attributes
         return redirect(url_for("heritage_faction"))
         
     else:         
@@ -40,15 +43,23 @@ def standard_generation():
         return render_template('start_attributes.html', attributes=attributes, error=ercode)
 
 
-def update_session(data):
-    for d in data:
-        print(f'{d.name}: {d.value}')
-    
-    return "done"
 
-@app.route("/heritage_faction")
+@app.route("/heritage_faction",methods=['GET','POST'])
 def heritage_faction():
-    return "Heritage Faction"
+
+    fac_herit = load_factions('./tables/factions_heritage.json')
+    faction, heritage = faction_heritage(fac_herit)
+    character['faction'] = faction
+    character['heritage'] = heritage
+    talent,languages,skills = fac_talents_lang_skills(fac_herit, faction, heritage)
+    character['talents'] = [talent]
+    print(talent, languages, skills)
+    if len(skills)>2:
+        print("you can only keep 2 skills and select one as signature")
+    
+    event=load_fact_event('./tables/faction_events.json', heritage)    
+    print(event)
+    return render_template('faction_heritage.html',faction = faction, heritage = heritage)
 
 @app.route("/points_system")
 def points_system():

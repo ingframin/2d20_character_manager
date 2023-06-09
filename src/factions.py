@@ -33,7 +33,7 @@ def fac_talents_lang_skills(fac_herit, faction, heritage):
     #Step 2
     talent = None
     languages = None
-    skills = []
+    skills = set()
 
     for f in fac_herit:
         if f['name'] == faction:
@@ -45,11 +45,11 @@ def fac_talents_lang_skills(fac_herit, faction, heritage):
             for sname in f['skills']:
                 if sname == 'Heritage':
                     continue
-                skills.append(Skill(sname,expertise=1,focus=0))
+                skills.add(Skill(sname,expertise=1,focus=0))
 
         if f['name'] == heritage:
             for sname in f['skills']:
-                skills.append(Skill(sname,expertise=1,focus=0))
+                skills.add(Skill(sname,expertise=1,focus=0))
     
     return talent,languages,skills
 

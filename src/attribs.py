@@ -7,6 +7,8 @@ class Skill:
     expertise:int = 0
     focus:int = 0
     signature: bool = False
+    def __hash__(self) -> int:
+        return hash(self.name)
     
 @dataclass
 class Attribute:

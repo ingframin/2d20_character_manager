@@ -7,6 +7,7 @@ class Skill:
     expertise:int = 0
     focus:int = 0
     signature: bool = False
+    
     def __hash__(self) -> int:
         return hash(self.name)
     
@@ -19,7 +20,7 @@ class Attribute:
     def validate(self, min_attrib:int, max_attrib:int)->bool:
         return self.value<=max_attrib and self.value >=min_attrib
 
-def load_attribs(filename:str):
+def load_attribs(filename:str)->list[Attribute]:
     with open(filename) as fp:
         attribs = json.load(fp)
     attributes = []

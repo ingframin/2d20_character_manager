@@ -2,62 +2,89 @@ import json
 from random import choice
 from dice import d6
 from attribs import Skill
+from dataclasses import dataclass
 
-def load_factions(filename:str):
+@dataclass
+class Faction:
+    id:int
+    name:str
+    languages:list[str]
+    skills:list[Skill]
+    talent:str
+
+
+def load_factions(filename:str)->list[Faction]:
     with open(filename) as fp:
         data = json.load(fp)
     
-    return data
+    factions = []
+    for d in data:
+        skl = [Skill(sn) for sn in d['skills']]
+        f = Faction(
+            id = d['id'],
+            name = d['name'],
+            languages = d['languages'],
+            skills=skl,
+            talent=d['talent']
+        )
+        factions.append(f)
+        
+    return factions
 
-def faction_heritage(fac_herit):
-    faction = None
-    heritage = None
+def faction_heritage(fac_herit:list[Faction])->tuple[Faction,Faction]:
+    
+    faction:Faction 
+    heritage:Faction 
+
     rnd6 = d6()
-    match rnd6:
-        case 1: 
-            faction = 'Freelancer'
-        case 2: 
-            faction = 'Criminal'
-        case 3: 
-            faction = 'Microcorp'
-        case _: 
-            faction = choice([f['name'] for f in fac_herit if f["id"]<7])
+    
     if rnd6 < 4:
-        heritage = choice([f['name'] for f in fac_herit if f["id"]<7])
+        #Criminal, Freelance or Microcorp
+        faction = fac_herit[rnd6-1]
+        heritage = choice([f for f in fac_herit if f.id>3])
+    
     else:
+        #Megacorp or Whitestar
+        faction = choice([f for f in fac_herit if f.id>3])
         heritage = faction
     
     return (faction,heritage)
 
-def fac_talents_lang_skills(fac_herit, faction, heritage):
+def fac_talents_lang_skills(faction:Faction, heritage:Faction)->tuple[str,set[str],set[Skill]]:
     #Step 2
-    talent = None
-    languages = None
+    talent = faction.talent
+    languages = set()
     skills = set()
 
-    for f in fac_herit:
-        if f['name'] == faction:
-            talent = f['talent']
-            languages = f['languages']
-            if 'Heritage' in languages:
-                languages.remove('Heritage')
-                languages.append(heritage)
-            for sname in f['skills']:
-                if sname == 'Heritage':
-                    continue
-                skills.add(Skill(sname,expertise=1,focus=0))
-
-        if f['name'] == heritage:
-            for sname in f['skills']:
-                skills.add(Skill(sname,expertise=1,focus=0))
+    for l in faction.languages:
+        if l == 'Heritage':
+            for lh in heritage.languages:
+                languages.add(lh)
+        languages.add(l)
+    
+    for skill in faction.skills:
+        if skill.name == 'Heritage':
+            for s in heritage.skills:
+                skills.add(s)
+        else:
+            skills.add(skill)
     
     return talent,languages,skills
 
-def load_fact_event(filename, heritage):
+def load_fact_event(filename:str, heritage:Faction)->str:
     with open(filename) as fp:
         events_table = json.load(fp)
+    
     rnd6 = d6()
-    for ev in events_table:
-        if ev['roll'] == rnd6:
-            return ev[heritage]
+    
+    ev:dict[str,str]
+    
+    for e in events_table:
+        if e['roll'] == rnd6:
+            ev = e
+            break
+
+    return ev[heritage.name]
+    
+    
     

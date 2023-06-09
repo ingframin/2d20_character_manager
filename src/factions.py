@@ -4,6 +4,10 @@ from dice import d6
 from attribs import Skill
 from dataclasses import dataclass
 
+# Too much mix of load from files and random choices, it is difficult to add the custom tweaks which can be bought with life points.
+# This is valid for all the files 
+
+
 @dataclass
 class Faction:
     id:int

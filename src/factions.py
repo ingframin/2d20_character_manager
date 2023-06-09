@@ -71,7 +71,7 @@ def fac_talents_lang_skills(faction:Faction, heritage:Faction)->tuple[str,set[st
     
     return talent,languages,skills
 
-def load_fact_event(filename:str, heritage:Faction)->str:
+def load_fact_event(filename:str, heritage_name:str)->str:
     with open(filename) as fp:
         events_table = json.load(fp)
     
@@ -84,7 +84,7 @@ def load_fact_event(filename:str, heritage:Faction)->str:
             ev = e
             break
 
-    return ev[heritage.name]
+    return ev[heritage_name]
     
     
     

@@ -66,6 +66,8 @@ def heritage_faction():
     print(event)
     return render_template('faction_heritage.html',faction = faction, heritage = heritage, skills=skills)
 
+
+
 @app.route("/points_system")
 def points_system():
     # Add your code for the 12 points system here

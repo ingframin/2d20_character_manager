@@ -1,24 +1,6 @@
 import json
-from dataclasses import dataclass
+from data_model import *
 
-@dataclass
-class Skill:
-    name: str
-    expertise:int = 0
-    focus:int = 0
-    signature: bool = False
-    
-    def __hash__(self) -> int:
-        return hash(self.name)
-    
-@dataclass
-class Attribute:
-    name: str
-    value: int
-    skills: list[Skill]
-
-    def validate(self, min_attrib:int, max_attrib:int)->bool:
-        return self.value<=max_attrib and self.value >=min_attrib
 
 def load_attribs(filename:str)->list[Attribute]:
     with open(filename) as fp:

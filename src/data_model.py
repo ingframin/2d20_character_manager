@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import Any
+from typing import Any,Self
+import json
 
 @dataclass
 class Skill:
@@ -19,6 +20,9 @@ class Attribute:
 
     def validate(self, min_attrib:int, max_attrib:int)->bool:
         return self.value<=max_attrib and self.value >=min_attrib
+    
+    
+
     
 @dataclass
 class Faction:

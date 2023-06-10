@@ -1,20 +1,11 @@
 import json
 from random import choice
 from dice import d6
-from attribs import Skill
+from data_model import *
 from dataclasses import dataclass
 
 # Too much mix of load from files and random choices, it is difficult to add the custom tweaks which can be bought with life points.
 # This is valid for all the files 
-
-
-@dataclass
-class Faction:
-    id:int
-    name:str
-    languages:list[str]
-    skills:list[Skill]
-    talent:str
 
 
 def load_factions(filename:str)->list[Faction]:

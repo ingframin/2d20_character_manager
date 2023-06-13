@@ -1,14 +1,12 @@
 from abc import ABC, abstractmethod
 from typing import Any
+from data_model import *
+from attribs import *
 
 class Decision(ABC):
     
     @abstractmethod
-    def setup(self,*args,**kwargs):
-        pass
-
-    @abstractmethod
-    def run(self,lifepoints:int):
+    def run(self):
         pass
     
     @abstractmethod
@@ -17,88 +15,30 @@ class Decision(ABC):
 
 class DecOneAttribs(Decision):
 
-    def setup(self,*args,**kwargs):
-        pass
+    def __init__(self,lifepoints:int,attrib_path:str)->None:
+        self.LP = lifepoints
+        self.attribs = load_attribs(attrib_path)
     
     def run(self):
-        pass
+        # 1) ask for adjustments
+        new_attribs = []
+        for a in self.attribs:
+            print(a.name,'\t',a.value)
+            newval = input("Change value? ")
+            if newval.isdigit():
+                nwa = Attribute(a.name,int(newval),a.skills)
+                while not nwa.validate(4,6):
+                    newval = input("Change value? ")
+                    nwa = Attribute(a.name,int(newval),a.skills)
+                new_attribs.append(nwa)
+            else:
+                new_attribs.append(a)
+        print(new_attribs)
+        # 2) spend LP for adjustments
 
     def next(self):
         pass
 
-class DecTwoBirthFaction(Decision):
-
-    def setup(self,*args,**kwargs):
-        pass
+    def __repr__(self) -> str:
+        return f"LP:{self.LP},\n {self.attribs}"
     
-    def run(self):
-        pass
-
-    def next(self):
-        pass
-
-class DecThreeStatus(Decision):
-
-    def setup(self,*args,**kwargs):
-        pass
-    
-    def run(self):
-        pass
-
-    def next(self):
-        pass
-
-class DecFourEnvironment(Decision):
-
-    def setup(self,*args,**kwargs):
-        pass
-    
-    def run(self):
-        pass
-
-    def next(self):
-        pass
-
-class DecFiveEducation(Decision):
-
-    def setup(self,*args,**kwargs):
-        pass
-    
-    def run(self):
-        pass
-
-    def next(self):
-        pass
-
-class DecSixPrimaryCareer(Decision):
-
-    def setup(self,*args,**kwargs):
-        pass
-    
-    def run(self):
-        pass
-
-    def next(self):
-        pass
-
-class DecSevenIconicCareer(Decision):
-
-    def setup(self,*args,**kwargs):
-        pass
-    
-    def run(self):
-        pass
-
-    def next(self):
-        pass
-
-class DecEightFinalCustomization(Decision):
-
-    def setup(self,*args,**kwargs):
-        pass
-    
-    def run(self):
-        pass
-
-    def next(self):
-        pass

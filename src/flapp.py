@@ -4,18 +4,27 @@ from attribs import *
 from data_model import *
 from factions import *
 import os
-import json
+
+# There should be a global object keeping the state of the Character sheet.
+# Each step/decision should be stored in a list with the possibility of rewinding
+# the process.
+# The "webapp" shall read and write state information from this object.
+# The object shall be serializable either in JSON or in another convenient format.
+# Once the process is complete, the character sheet should be rendered as a PDF 
+# with the help of PyPDF2.
+
+
+
+
 app = Flask(__name__,template_folder='templates',static_folder='assets')
 app.config["DATA_DIR"] = os.path.join(os.getcwd(), "tables")
 
 @app.route("/")
 def home():
-    attribs = load_attribs('./tables/attributes.json')
-    
+   
     return render_template("home.html", attributes=attribs)
 
 
-character = {}
 
 @app.route("/standard_generation", methods=['GET','POST'])
 def standard_generation():
@@ -24,7 +33,6 @@ def standard_generation():
     next_ok = 'true'
     if request.method == 'GET':
         ercode = ''
-        
         
     if request.method == 'POST':
         request.form.to_dict()
@@ -42,31 +50,6 @@ def standard_generation():
         
     totpts = sum([a.value for a in attributes])
     return render_template('start_attributes.html', attributes=attributes, error=ercode, total_points=totpts,next_ok=next_ok)
-        # checksum = 0
-        # for a in new_attribs:
-            
-        #     if int(new_attribs[a]) < 4 or int(new_attribs[a]) > 6:
-        #         return redirect(url_for("standard_generation",error="Attributes should be between 4 and 6"))
-        #     for atr in attributes:
-        #         if atr.name == a:
-        #             atr.value = int(new_attribs[a])
-        #     checksum += int(new_attribs[a])
-    #     if checksum != 40:
-            
-    #         return redirect(url_for("standard_generation",error="The sum of all attributes should be 40!"))
-        
-    #     character['attribs'] = attributes
-    #     return redirect(url_for("heritage_faction"))
-        
-    # else:         
-    #     try:
-    #         ercode = f"Error: {request.args['error'] }"
-    #     except:
-    #         ercode = ''
-        # Render template with attributes and initial values
-    ercode = ''
-    totpts = sum([a.value for a in attributes])
-    return render_template('start_attributes.html', attributes=attributes, error=ercode, total_points=totpts)
 
 
 @app.route("/points_system")

@@ -1,5 +1,5 @@
 import json
-from data_model import *
+from data_model import Attribute, Skill
 
 
 def load_attribs(filename:str)->list[Attribute]:

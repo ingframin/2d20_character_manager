@@ -22,7 +22,7 @@ app.config["DATA_DIR"] = os.path.join(os.getcwd(), "tables")
 @app.route("/")
 def home():
    
-    return render_template("home.html", attributes=attribs)
+    return render_template("home.html")
 
 
 

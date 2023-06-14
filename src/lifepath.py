@@ -2,15 +2,14 @@ from dice import *
 from attribs import *
 from factions import *
 from random import choice
-from decisions import *
 
-character:list[Decision] = []
+
+
 
 # This is a stub to test the procedure
 def lifepath():
     lifpoints = 5
-    d1 = DecOneAttribs(lifepoints = 5, attrib_path = './tables/attributes.json')
-    d1.run()
+
     # print("Mutant Chronicles character creator")
 
     # #Decision 1 - Select starting attributes

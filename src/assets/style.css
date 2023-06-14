@@ -49,7 +49,7 @@ button:hover {
 button:active{
     background-color: #777373;
     color: #f5ffa8;
-    transform: translateY(4px);
+    /* transform: translateY(4px); */
 }
 
 .copyrightnote p{

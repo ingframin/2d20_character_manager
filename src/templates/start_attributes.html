@@ -24,6 +24,14 @@
             <input type="submit" value="Submit">
         </form>
         <p>Total points: {{ total_points }}</p>
+        <button type="button" id="next_btn">Click Me!</button> 
     </body>
-    
+    <script>
+        btn = document.getElementById("next_btn")
+        if ("{{next_ok}}" ==='true'){
+            btn.setAttribute("disabled", "disabled");
+            btn.setAttribute('style',"border:1px solid teal;background-color: grey;")
+
+        }
+    </script>
 </html>

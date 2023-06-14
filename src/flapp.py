@@ -79,4 +79,10 @@ def free_character():
     return "Free Character"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import webview
+    from threading import Thread
+    apptr = Thread(target=app.run, kwargs={'debug':False})
+    apptr.start()
+    webview.create_window('Hello world', 'http://127.0.0.1:5000',width=1000,height=650)
+    webview.start()
+    apptr.join()

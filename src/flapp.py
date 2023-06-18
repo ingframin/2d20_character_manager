@@ -51,6 +51,9 @@ def standard_generation():
     totpts = sum([a.value for a in attributes])
     return render_template('start_attributes.html', attributes=attributes, error=ercode, total_points=totpts,next_ok=next_ok)
 
+@app.route("/adjust_attributes")
+def adjust_attributes():
+    return "Adjust attributes spending life points"
 
 @app.route("/points_system")
 def points_system():

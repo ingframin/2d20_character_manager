@@ -16,22 +16,28 @@
                     <label>{{ attribute.name }}</label>
                 </div>
                 <div class="grid-item">
-                    <input type="number" name="{{ attribute.name }}" value="{{ attribute.value }}" max="6" min="4"></br>
+                    <input type="number" name="{{ attribute.name }}" value="{{ attribute.value }}" max="6" min="4" onchange="disable_next()"></br>
                 </div>
                 {% endfor %}
             </div>
                         
-            <input type="submit" value="Submit">
+            <input type="submit" value="Validate Attributes">
         </form>
         <p>Total points: {{ total_points }}</p>
-        <button type="button" id="next_btn" onclick="window.location.href='adjust_attributes'" >Next: Adjust Attributes</button> 
+        <p>Total life points: {{ total_LP }}</p>
+        <button type="button" id="next_btn" onclick="window.location.href='faction_heritage'" >Next: Faction and Heritage</button> 
     </body>
     <script>
-        btn = document.getElementById("next_btn")
-        if ("{{next_ok}}" ==='true'){
+        function disable_next(){
+            btn = document.getElementById("next_btn")
             btn.setAttribute("disabled", "disabled");
             btn.setAttribute('style',"border:1px solid teal;background-color: grey;")
 
         }
+
+        if ('{{next_ok}}' == 'false'){
+            disable_next()
+        }
+        
     </script>
 </html>

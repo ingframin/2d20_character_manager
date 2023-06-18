@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
+from decisions import Decision,DecisionOneAttribs,DecisionTwoFactionHeritage
 import webview
 from attribs import *
 from data_model import *
@@ -12,12 +13,16 @@ import os
 # The object shall be serializable either in JSON or in another convenient format.
 # Once the process is complete, the character sheet should be rendered as a PDF 
 # with the help of PyPDF2.
-
+# Needs a rewind funciton to reset the state of each decision and restart from the beginning  
 
 
 
 app = Flask(__name__,template_folder='templates',static_folder='assets')
 app.config["DATA_DIR"] = os.path.join(os.getcwd(), "tables")
+
+# This should become a list of decisions
+
+decs:dict[str,Decision] = {}
 
 @app.route("/")
 def home():
@@ -28,32 +33,50 @@ def home():
 
 @app.route("/standard_generation", methods=['GET','POST'])
 def standard_generation():
+    if 'D1' not in decs:
+        # Create decision 1 if it's the first pass or after a reset
+        decs['D1'] = DecisionOneAttribs(life_points=5)
     
-    attributes = load_attribs('./tables/attributes.json')
     next_ok = 'true'
+    ercode = ''
     if request.method == 'GET':
         ercode = ''
         
     if request.method == 'POST':
+        
         request.form.to_dict()
         new_attribs = request.form.to_dict()
-        for a in new_attribs:
-            for atr in attributes:
-                if atr.name == a:
-                    atr.value = int(new_attribs[a])
-
-        if validate_attribs(attributes,40):
-            ercode = 'Success!'
+        vals = [int(new_attribs[a]) for a in new_attribs]
+        if sum(vals) < 40:
+            ercode = 'The sum of all the attributes should be between 40 and 45!'
             next_ok = 'false'
+            
         else:
-            ercode = "The sum of all attributes should be 40!"
-        
-    totpts = sum([a.value for a in attributes])
-    return render_template('start_attributes.html', attributes=attributes, error=ercode, total_points=totpts,next_ok=next_ok)
 
-@app.route("/adjust_attributes")
-def adjust_attributes():
-    return "Adjust attributes spending life points"
+            for a in new_attribs:
+                try:
+                    decs['D1'].adjust_attrib(a,int(new_attribs[a]))
+                except ValueError as wa:
+                    ercode = str(wa)
+                    next_ok = 'false'
+        
+        
+    totpts = sum([a.value for a in decs['D1'].attributes])
+    if totpts not in range(40,46):
+        next_ok = 'false'
+    return render_template('start_attributes.html', attributes=decs['D1'].attributes, error=ercode, total_points=totpts,next_ok=next_ok,total_LP=decs['D1'].LP)
+
+@app.route("/faction_heritage")
+def faction_heritage():
+    
+    if 'D2' not in decs:
+        # Create decision 2 if it's the first pass or after a reset
+        lp = decs['D1'].LP
+        decs['D2'] = DecisionTwoFactionHeritage(life_points=lp)
+    
+    d2 = decs['D2']
+    
+    return "Decision2: Faction Heritage"
 
 @app.route("/points_system")
 def points_system():

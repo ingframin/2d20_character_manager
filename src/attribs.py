@@ -6,7 +6,9 @@ def load_attribs(filename:str)->list[Attribute]:
     with open(filename) as fp:
         attribs = json.load(fp)
     attributes = []
+
     for a in attribs:
+        print(a)
         atr = Attribute(a['name'],a['value'],[])
         for sn in a['skills']:
             atr.skills.append(Skill(sn))

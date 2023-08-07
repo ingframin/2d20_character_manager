@@ -1,5 +1,6 @@
-from data_model import Attribute
+from data_model import Attribute,Faction
 from attribs import load_attribs,validate_attribs
+import json
 from abc import ABC
 
 class Decision(ABC):
@@ -29,8 +30,20 @@ class DecisionOneAttribs(Decision):
 class DecisionTwoFactionHeritage(Decision):
     def __init__(self,life_points:int=5, fact_file:str='./tables/factions_heritage.json') -> None:
         self.LP = life_points
-        self.facts_herit = load_attribs(fact_file)
+        # This should be another function!!
+        self.facts_herit = self.load_factions(fact_file)
     
+    def load_factions(self,filename:str)->list[Faction]:
+        with open(filename) as fp:
+            facts_table = json.load(fp)
+        facts = []
+        for f in facts_table:
+            facts.append(
+                Faction(f['id'],f['name'],f['languages'],f['skills'],f['talent'])
+            )
+        
+        return facts
+
     def select_faction(self):
         pass
 

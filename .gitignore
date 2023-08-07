@@ -1,2 +1,4 @@
 chargen
 dist
+__pycache__
+.pyc

@@ -1,5 +1,5 @@
+from random import choice
 from data_model import Attribute,Faction, Skill
-from attribs import load_attribs,validate_attribs
 import json
 from abc import ABC
 
@@ -40,7 +40,7 @@ class DecisionOneAttribs(Decision):
         
         total_attr = sum([a.value for a in self.attributes])
         
-        self.LP = max_LP-(total_attr- target)
+        self.LP = max_LP-(total_attr - target)
         
     def __repr__(self) -> str:
         lst = [f'{a.name}:{a.value}' for a in self.attributes]
@@ -65,10 +65,12 @@ class DecisionTwoFactionHeritage(Decision):
         return facts
 
     def select_faction(self):
-        pass
+        self.faction = choice(self.facts_herit)
+        return self.faction.name
 
     def select_heritage(self):
-        pass
+        self.heritage = choice(self.facts_herit)
+        return self.heritage.name
 
     def roll_event(self):
         pass

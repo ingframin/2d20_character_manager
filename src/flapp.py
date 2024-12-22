@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 from decisions import Decision,DecisionOneAttribs,DecisionTwoFactionHeritage
 import webview
-from attribs import *
 from data_model import *
 from factions import *
 import os
@@ -73,10 +72,12 @@ def faction_heritage():
         # Create decision 2 if it's the first pass or after a reset
         lp = decs['D1'].LP
         decs['D2'] = DecisionTwoFactionHeritage(life_points=lp)
+        
     
     d2 = decs['D2']
-    
-    return "Decision2: Faction Heritage"
+    faction = d2.select_faction()
+    heritage = d2.select_heritage()
+    return render_template('faction_heritage.html', faction=faction, heritage=heritage)
 
 @app.route("/points_system")
 def points_system():

@@ -7,6 +7,5 @@ This software is provided as-is with GPLv3 license (see license file).
 This software is a fan made program: I have no relation with Modiphius nor the copyright holders of the Mutant Chronicles franchise.
 
 ## Dependencies
-- Cherrypy
-- PyOpenSSL
-- Mako
+- Flask
+- PyWebView

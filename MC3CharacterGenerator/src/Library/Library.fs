@@ -1,5 +1,8 @@
-﻿namespace Library
+﻿module Library
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
+open System.Text.Json
+
+
+let getJson value =
+    let json = JsonSerializer.Serialize(value)
+    value, json

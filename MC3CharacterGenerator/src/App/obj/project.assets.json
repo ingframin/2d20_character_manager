@@ -55,6 +55,19 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FSharp.Core": "9.0.100"
+        },
+        "compile": {
+          "bin/placeholder/Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.dll": {}
+        }
       }
     }
   },
@@ -100,11 +113,17 @@
         "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
       ]
+    },
+    "Library/1.0.0": {
+      "type": "project",
+      "path": "../Library/Library.fsproj",
+      "msbuildProject": "../Library/Library.fsproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "FSharp.Core >= 9.0.100"
+      "FSharp.Core >= 9.0.100",
+      "Library >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -132,7 +151,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ingfr\\mc3_character_generator\\MC3CharacterGenerator\\src\\Library\\Library.fsproj": {
+              "projectPath": "C:\\Users\\ingfr\\mc3_character_generator\\MC3CharacterGenerator\\src\\Library\\Library.fsproj"
+            }
+          }
         }
       },
       "restoreAuditProperties": {

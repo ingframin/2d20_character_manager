@@ -1,0 +1,117 @@
+[
+    {
+        "roll":1,
+        "description":"Post Graduate Technical/Scientific",
+        "attribs":{
+            "Strength":0,
+            "Physique":0,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":2,
+            "Intelligence":3,
+            "Mental Strength":1,
+            "Personality": 1
+        },
+        "mandatory skills":["Education","Pilot","Lifestyle","Mechanics","Treatment"],
+        "elective skills":["Space","Science", "Medicine"],
+        "talents":["Any from mandatory skills", "Sciences", "Medicine"],
+        "Free career":["Medical","Academic","Technical"],
+        "equipment":["Mechanics tool kit or laboratory, personal"]
+    },
+    {
+        "roll":2,
+        "description":"Post Graduate Technical/Scientific",
+        "attribs":{
+            "Strength":0,
+            "Physique":0,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":2,
+            "Intelligence":3,
+            "Mental Strength":1,
+            "Personality": 1
+        },
+        "mandatory skills":["Education","Pilot","Lifestyle","Mechanics","Treatment"],
+        "elective skills":["Space","Science", "Medicine"],
+        "talents":["Any from mandatory skills", "Sciences", "Medicine"],
+        "Free career":["Medical","Academic","Technical"],
+        "equipment":["Mechanics tool kit or laboratory, personal"]
+    },
+    {
+        "roll":3,
+        "description":"Creative Education",
+        "attribs":{
+            "Strength":0,
+            "Physique":1,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":1,
+            "Intelligence":2,
+            "Mental Strength":0,
+            "Personality": 3
+        },
+        "mandatory skills":["Education","Lifestyle","Observation","Persuade","Insight"],
+        "elective skills":["Linguistics","Mechanics","Pilot"],
+        "talents":["Any from mandatory skills"],
+        "Free career":["Media"],
+        "equipment":["Media kit"]
+    },
+    {
+        "roll":4,
+        "description":"Officer Training",
+        "attribs":{
+            "Strength":1,
+            "Physique":2,
+            "Agility":0,
+            "Awareness":0,
+            "Coordination":1,
+            "Intelligence":1,
+            "Mental Strength":2,
+            "Personality": 3
+        },
+        "mandatory skills":["Education","Persuade","Observation","Athletics","Command"],
+        "elective skills":["Close Combat","Ranged Weapons","Acrobatics"],
+        "talents":["Any from mandatory skills"],
+        "Free career":["Military","Executive"],
+        "equipment":["Pair of light military shoulder pads, one set of military dress uniform, corporation appropriate handgun"]
+    },
+    {
+        "roll":5,
+        "description":"Managerial Education",
+        "attribs":{
+            "Strength":0,
+            "Physique":0,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":1,
+            "Intelligence":1,
+            "Mental Strength":2,
+            "Personality":3
+        },
+        "mandatory skills":["Education","Lifestyle","Willpower","Persuade","Command"],
+        "elective skills":["Insight","Thievery","Observation"],
+        "talents":["Any from mandatory skills","Observation"],
+        "Free career":"Executive",
+        "equipment":["One set of corporate quality business attire, one set of fashionable clothing"]
+    },
+    {
+        "roll":6,
+        "description":"Brotherhood Apprenticeship",
+        "attribs":{
+            "Strength":0,
+            "Physique":1,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":1,
+            "Intelligence":2,
+            "Mental Strength":3,
+            "Personality":0
+        },
+        "mandatory skills":["Education","Observation","Willpower","Persuade","Mysticism"],
+        "elective skills":["Insight","Resistance","Athletics"],
+        "talents":["Mystic"],
+        "Free career":"Academic",
+        "equipment":["Brotherhood symbol pendant, Brotherhood robes, Book of the Law"]
+    }
+
+]

@@ -1,0 +1,116 @@
+[
+    {
+        "roll":1,
+        "description":"Technical Pre-Career Training",
+        "attribs":{
+            "Strength":1,
+            "Physique":1,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":2,
+            "Intelligence":3,
+            "Mental Strength":0,
+            "Personality": 0
+        },
+        "mandatory skills":["Education","Mechanics","Pilot","Lifestyle","Observation"],
+        "elective skills":["Space","Treatment", "Survival"],
+        "talents":["Any from mandatory skills"],
+        "Free career":["Medical","Ship Crew","Technical"],
+        "equipment":["Basic first aid kit", "basic tool kit"]
+    },
+    {
+        "roll":2,
+        "description":"Technical Pre-Career Training",
+        "attribs":{
+            "Strength":1,
+            "Physique":1,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":2,
+            "Intelligence":3,
+            "Mental Strength":0,
+            "Personality": 0
+        },
+        "mandatory skills":["Education","Mechanics","Pilot","Lifestyle","Observation"],
+        "elective skills":["Space","Treatment", "Survival"],
+        "talents":["Any from mandatory skills"],
+        "Free career":["Mecial","Ship Crew","Technical"],
+        "equipment":["Basic first aid kit", "basic tool kit"]
+    },
+    {
+        "roll":3,
+        "description":"Creative Pre-Career Training",
+        "attribs":{
+            "Strength":0,
+            "Physique":1,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":1,
+            "Intelligence":2,
+            "Mental Strength":0,
+            "Personality": 3
+        },
+        "mandatory skills":["Education","Lifestyle","Observation","Willpower","Persuade"],
+        "elective skills":["Insight","Pilot","Mechanics"],
+        "talents":["Any from mandatory skills"],
+        "Free career":"Media",
+        "equipment":["Media kit"]
+    },
+    {
+        "roll":4,
+        "description":"Military Academy",
+        "attribs":{
+            "Strength":2,
+            "Physique":2,
+            "Agility":1,
+            "Awareness":0,
+            "Coordination":1,
+            "Intelligence":0,
+            "Mental Strength":3,
+            "Personality": 1
+        },
+        "mandatory skills":["Education","Close Combat","Observation","Athletics","Acrobatics"],
+        "elective skills":["Ranged Weapons","Resistance","Willpower"],
+        "talents":["Any from mandatory skills","Ranged Weapons"],
+        "Free career":"Military",
+        "equipment":[" Pair of light military shoulder pads, one set of corporate quality dress military uniform"]
+    },
+    {
+        "roll":5,
+        "description":"Management Experience",
+        "attribs":{
+            "Strength":0,
+            "Physique":0,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":1,
+            "Intelligence":1,
+            "Mental Strength":2,
+            "Personality": 3
+        },
+        "mandatory skills":["Education","Lifestyle","Observation","Willpower","Persuade"],
+        "elective skills":["Command","Thievery","Stealth"],
+        "talents":["Any from mandatory skills", "Command"],
+        "Free career":"Executive",
+        "equipment":["Good-quality smart business attire"]
+    },
+    {
+        "roll":6,
+        "description":"Brotherhood Educated",
+        "attribs":{
+            "Strength":0,
+            "Physique":1,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":0,
+            "Intelligence":2,
+            "Mental Strength":3,
+            "Personality": 1
+        },
+        "mandatory skills":["Education","Willpower","Persuade","Observation","Resistance"],
+        "elective skills":["Insight","Athletics","Close Combat"],
+        "talents":["Any from mandatory skills", "Insight"],
+        "Free career":"Any from primary career table, column A or B",
+        "equipment":["One set of corporate quality clothing, a small symbol of the Brotherhood"]
+    }
+]

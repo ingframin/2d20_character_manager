@@ -1,0 +1,102 @@
+[
+    {
+        "roll":1,
+        "description":"Grew Up On The Streets",
+        "attribs":{
+            "Strength":2,
+            "Physique":2,
+            "Agility":1,
+            "Awareness":1,
+            "Coordination":1,
+            "Intelligence":0,
+            "Mental Strength":1,
+            "Personality": 0
+        },
+        "mandatory skills":["Survival","Resistance", "Willpower", "Stealth", "Observation"],
+        "elective skills":["Close Combat","Lifestyle", "Athletics"],
+        "talents":["Any from mandatory skills"],
+        "Free career":"Criminal",
+        "equipment":[]
+    },
+    {
+        "roll":2,
+        "description":"Technical OTJ Training",
+        "attribs":{
+            "Strength":1,
+            "Physique":1,
+            "Agility":1,
+            "Awareness":2,
+            "Coordination":1,
+            "Intelligence":2,
+            "Mental Strength":0,
+            "Personality": 0
+        },
+        "mandatory skills":["Education","Mechanics","Observation","Pilot","Thievery"],
+        "elective skills":["Close Combat","Lifestyle", "Survival"],
+        "talents":["Any from mandatory skills"],
+        "Free career":"Technical",
+        "equipment":["Basic repair kit"]
+
+    },
+    {
+        "roll":3,
+        "description":"Rural/Colonial Education",
+        "attribs":{
+            "Strength":1,
+            "Physique":1,
+            "Agility":2,
+            "Awareness":2,
+            "Coordination":1,
+            "Intelligence":1,
+            "Mental Strength":0,
+            "Personality": 0
+        },
+        "mandatory skills":["Education","Mechanics","Survival","Pilot","Resistance"],
+        "elective skills":["Animal Handling","Athletics", "Observation"],
+        "talents":["Any from mandatory skills"],
+        "Free career":"Farmer/Frontiersman",
+        "equipment":["Basic regional survival kit"]
+    },
+    {
+        "roll":4,
+        "description":"Clerical Education",
+        "attribs":{
+            "Strength":0,
+            "Physique":0,
+            "Agility":1,
+            "Awareness":1,
+            "Coordination":1,
+            "Intelligence":1,
+            "Mental Strength":2,
+            "Personality": 2
+        },
+        "mandatory skills":["Education","Lifestyle","Observation","Stealth","Persuade"],
+        "elective skills":["Willpower","Thievery", "Pilot"],
+        "talents":["Any from mandatory skills"],
+        "Free career":"Corporate Worker",
+        "equipment":["One suit of corporate quality clothing"]
+    },
+    {
+        "roll":5,
+        "description":"Teenage Draft",
+        "attribs":{
+            "Strength":2,
+            "Physique":2,
+            "Agility":1,
+            "Awareness":1,
+            "Coordination":1,
+            "Intelligence":0,
+            "Mental Strength":1,
+            "Personality": 0
+        },
+        "mandatory skills":["Athletics","Education","Close Combat","Ranged Weapons","Survival"],
+        "elective skills":["Acrobatics","Resistance","Willpower"],
+        "talents":["Any from mandatory skills"],
+        "Free career":"Military",
+        "equipment":["Pair of light military shoulder pads, one set of regular quality military fatigues"]
+    },
+    {
+        "roll":6,
+        "description":"pick another one"
+    }
+]

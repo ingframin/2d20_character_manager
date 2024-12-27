@@ -1,3 +1,236 @@
 [
-    {}
+    {
+        "roll": 2,
+        "event": "A stranger visited your home and\nspoke in hushed tones with a family\nmember. What did they talk about?",
+        "traits": "Shady Past",
+        "effects": "Your family\u2019s surname is infamous amongst\ncorporate elite, your Social tests amongst\nthem are one difficulty rank higher."
+    },
+    {
+        "roll": 3,
+        "event": "Something your family did haunts you\nwherever you go.",
+        "traits": "Infamous",
+        "effects": "Security guards tend to become alert when\nthey hear your name. Difficulty to avoid\nattention is one higher when your identity is\nknown."
+    },
+    {
+        "roll": 4,
+        "event": "There is something odd you can do,\nnothing much, just\u2026 weird. What is\nit, and why are you afraid of showing\npeople what you can do?",
+        "traits": "Mutant",
+        "effects": "What strange little thing can you do? It\nshould not provide any Skill benefit and will\nmake Social tests one difficulty rank higher\nif people see you do it. See Mutants &\nHeretics Handbook for expanded rules."
+    },
+    {
+        "roll": 5,
+        "event": "A stranger came to the house and\nleft a package for you. What is so\nimportant about it? How will you know\nwhen to open it?",
+        "traits": "Unwanted Heritage",
+        "effects": "You gain a package worth five assets that\nyou must never lose. You do not know what\nis inside. Decide when you will know whether\nto open the package."
+    },
+    {
+        "roll": 6,
+        "event": "You just do not know when to say no.",
+        "traits": "Weak Willed",
+        "effects": "Social tests against you receive one bonus\nMomentum, but your openness to adventure\nhas paid off. Gain one asset."
+    },
+    {
+        "roll": 7,
+        "event": "Something has been handed down\nthrough the family for generations,\nand your ancestors nearly did not\nmake it off Earth because of it. What is\nit, why do you think it is so important,\nand what must you never do to it?",
+        "traits": "Dangerous Possession",
+        "effects": "You gain an artefact worth five assets that\nis coveted by others and unique in some\nfashion. Gain an enemy in a random faction\nwho is aware of the artefact."
+    },
+    {
+        "roll": 8,
+        "event": "Slender Body",
+        "traits": "You feel every punch",
+        "effects": "Reduce your Serious Wounds by one and\nincrease your Critical Wounds by one."
+    },
+    {
+        "roll": 9,
+        "event": "You are a prodigy. You excelled at\na particular skill from a very young\nage. You could have been a talented\nmusician or a maths whiz. Regardless,\nyour talent got a lot of attention in the\nmedia and your family profited from\nit. However the moment passed, and\nnow you are bitter that others have\ndone better.",
+        "traits": "Bitter",
+        "effects": "Gain one level of Social Status or five\nassets. Alternatively, gain a contact in\nmedia, academia, or the entertainment\nindustry. Social tests with members of the\nentertainment industry are increased by one\ndifficulty (you are a failed media star after all)."
+    },
+    {
+        "roll": 10,
+        "event": "Dimwitted",
+        "traits": "Slow to react",
+        "effects": "Your Mental Strength tests against mental\nassaults are one difficulty lower (minimum\none), but you always go last (after NPCs) in\nInitiative unless you pay 1DSP."
+    },
+    {
+        "roll": 11,
+        "event": "You got involved with the wrong\npeople and were involved in a\nserious crime.",
+        "traits": "Criminal Record",
+        "effects": "Spend 1d6 years in jail before starting your\nfirst career. Gain Criminal Record*."
+    },
+    {
+        "roll": 12,
+        "event": "Both your parents died in a mysterious\naccident. You were sent to an\norphanage.",
+        "traits": "Orphan",
+        "effects": "Reduce Social Status by one (minimum 0).\nGain 1d6 assets at age of 20 from an estate\nleft for you."
+    },
+    {
+        "roll": 13,
+        "event": "Your family has corporation\nconnections and is owed a lot of\nfavours.",
+        "traits": "Daddy\u2019s Boy / Girl",
+        "effects": "If you get a Fired result you can ignore it, but\nreduce your Earnings Rating by one."
+    },
+    {
+        "roll": 14,
+        "event": "At 4am in the morning you were taken\nfrom your home. You heard shots and\nnever saw your family again.",
+        "traits": "Lost Family",
+        "effects": "You have a mysterious benefactor who saved\nyou, and you grew up with family friends.\nDecrease your Social Status by one, but gain\na free re-roll on a career event."
+    },
+    {
+        "roll": 15,
+        "event": "You messed up and are arrested for a\nminor crime.",
+        "traits": "Criminal Record",
+        "effects": "Spend one year in jail before starting your\nfirst career. Gain Criminal Record*."
+    },
+    {
+        "roll": 16,
+        "event": "You had a terrible childhood accident.",
+        "traits": "Disabled",
+        "effects": "All movement related skill tests are one\ndifficulty harder, but you have gained a\nstrong will. All Mental Strength tests are one\ndifficulty lower (minimum 1)."
+    },
+    {
+        "roll": 17,
+        "event": "You have a godparent with\nconnections.",
+        "traits": "Annoying Family",
+        "effects": "You may choose any result from Column A\non the Primary Career Table or roll for free\non Column B."
+    },
+    {
+        "roll": 18,
+        "event": "Your body is intolerant to chemical\nsubstances.",
+        "traits": "Industrial Hay Fever",
+        "effects": "All Resistance tests for artificial substances\nare increased by one level of difficulty.\nCoagulant provides no bonuses."
+    },
+    {
+        "roll": 19,
+        "event": "Criminal Family.",
+        "traits": "Connected to Criminals",
+        "effects": "You may freely choose the Criminal Primary\nCareer. You are often a suspect in police\nenquiries and all Social tests with security\nor police services are one difficulty rank\ngreater. Gain a favour in another criminal\norganisation."
+    },
+    {
+        "roll": 20,
+        "event": "You are charismatic \u2013 people just love\nyou.",
+        "traits": "Big Headed",
+        "effects": "You gain one free Momentum in Social tests\nwith new contacts, but with those in your\nimmediate departments or community (those\nwho know of you) are one difficulty greater."
+    },
+    {
+        "roll": 21,
+        "event": "You will believe anything.",
+        "traits": "Na\u00efve",
+        "effects": "Illusions seldom cause confusion. You either\nbelieve them, or you do not. All illusions are\none difficulty rank greater against you, but\nonce in place last twice as long."
+    },
+    {
+        "roll": 22,
+        "event": "You do not know how, but sometimes\neverything just goes right for you.\nHowever, you have this feeling that\none day you are going to have to pay\nback all that good luck.",
+        "traits": "Building up a debt",
+        "effects": "Make a Difficulty 1 Willpower test whenever\nyou refresh Chronicle points. If you succeed,\ngain an extra Chronicle point this session\nonly, and any Momentum converts to Dark\nSymmetry points added to the GM\u2019s pool."
+    },
+    {
+        "roll": 23,
+        "event": "Your actions revealed a traitor or the\nplans of another faction.",
+        "traits": "Enemy",
+        "effects": "Gain an enemy in a random faction. However\nyou are promoted as a result, increasing\nEarnings Rating by one."
+    },
+    {
+        "roll": 24,
+        "event": "You developed a terrible way with\nwords.",
+        "traits": "Tactless",
+        "effects": "Persuasion tests are one difficulty rank\ngreater, but when successful you gain one\nadditional Momentum."
+    },
+    {
+        "roll": 25,
+        "event": "You know way too much about\nsomething.",
+        "traits": "Obsessive",
+        "effects": "Gain one Momentum on Education tests to\nknow things about your obsessive topic."
+    },
+    {
+        "roll": 26,
+        "event": "You are a gifted student, and come to\nthe attention of a leading scientist.",
+        "traits": "Conflict",
+        "effects": "Gain a conflict within your own faction as\nothers are jealous of your achievements.\nYou have a great contact in an educational\ninstitution (favour) and may freely choose the\nAcademic Primary Career."
+    },
+    {
+        "roll": 27,
+        "event": "You helped solve a serious crime.\nYou have a contact in the police\ndepartment.",
+        "traits": "Snitch",
+        "effects": "If you ever gain a Criminal Record, you\nmay reduce your Earnings Rating by one to\nremove it. Social tests with this contact are\none difficulty lower."
+    },
+    {
+        "roll": 28,
+        "event": "Seems like anything can make you\nangry.",
+        "traits": "Violent temper",
+        "effects": "Dark Symmetry points spent to make melee\nattacks give you 2d20 instead of one, but\nincrease all Social tests by one difficulty."
+    },
+    {
+        "roll": 29,
+        "event": "You have an answer for everything.",
+        "traits": "Smart Ass",
+        "effects": "Dark Symmetry points spent for all Education\ntests give you 2d20 instead of one, but\nincrease all Social tests by one difficulty for a\nscene."
+    },
+    {
+        "roll": 30,
+        "event": "A relative leaves you money in their\nwill.",
+        "traits": "Annoying Family",
+        "effects": "Gain 1d6 assets at age of 20 as long as you\ndo not get a Criminal Record before then."
+    },
+    {
+        "roll": 31,
+        "event": "You spent a lot of time with the wrong\npeople, either due to a rebellious\nstreak or circumstances at home; or\nyou could simply not have had a lot of\noptions. Your friends taught you how\nto survive on the street, how to steal,\nbeg, rob, or other \u2018useful life lessons\u2019.\nYou may or may not have cut your\nties with your old associates, but they\nsurely remember you. Even if they do\nnot, the law certainly does.",
+        "traits": "Bad Company",
+        "effects": "You are comfortable around low-lifes and\nknow how to communicate with them. Gain\na free Momentum on successful Social tests\nwith criminals, gang members or people\nin Social Status 0 or 1. Alternatively, gain a\ncriminal contact."
+    },
+    {
+        "roll": 32,
+        "event": "Born with a spanner in your hand, you\nhave a way with equipment.",
+        "traits": "Gearhead",
+        "effects": "You gain one free Momentum when\nmaking tests to understand or fix a piece of\nequipment."
+    },
+    {
+        "roll": 33,
+        "event": "There is something you cannot get\nenough off. What is it? You will take\nrisks to satisfy your craving.",
+        "traits": "Addict",
+        "effects": "Availability tests for procuring your addiction\nare Difficulty 1."
+    },
+    {
+        "roll": 34,
+        "event": "Your body is very resistant to artificial\nsubstances.",
+        "traits": "Nothing helps the pain",
+        "effects": "All Resistance tests for artificial substances\nare reduced by one level of difficulty."
+    },
+    {
+        "roll": 35,
+        "event": "You have an anatomical sixth sense \u2013\nsomehow you hit people where it hurts\nthe most.",
+        "traits": "Merciless",
+        "effects": "Extra \u00a71 ranged damage."
+    },
+    {
+        "roll": 36,
+        "event": "You stood up to the muggers as a kid,\nhave done it many times over, and\nhave the scars to show it.",
+        "traits": "Reckless",
+        "effects": "Extra \u00a71 close combat damage."
+    },
+    {
+        "roll": 37,
+        "event": "Your family cleared its name, and\nregained long lost social status or\nwealth that was yours by rights.",
+        "traits": "Unsympathetic to the poor",
+        "effects": "Increase Social Status and Earnings Rating\nby 1 level or gain two assets (do not change\nequipment choices made previously)."
+    },
+    {
+        "roll": 38,
+        "event": "There is something quite cool you\ncan do, but it got you in trouble a few\ntimes before you learned to hide it.\nWhat is it? Why did your parents tell\nyou never to tell anyone about it? You\ntry not to use it much as you get killer\nheadaches afterwards.",
+        "traits": "Mutant",
+        "effects": "Pick the top talent of any skill tree. You\ncan pay a Chronicle point to use this\nability, however you take a Challenging D2\nWillpower test, or suffer a mental assault,\nafterwards from the pain it causes. Describe\nhow your mutant heritage allows you to do\nthis. See the Mutants & Heretics Handbook\nfor expanded rules."
+    },
+    {
+        "roll": 39,
+        "event": "A life in the colonies can be hard,\nand you had the worst of it where\nyou came from. The punishing life or\ntraining has given you a strong body.",
+        "traits": "Unsympathetic to the weak",
+        "effects": "Take your wounds from the next best row in\nthe wounds table."
+    },
+    {
+        "roll": 40,
+        "event": "You are changing, you can feel it.\nThere has been something going on\ninside your body since you were a\nkid; you have these odd dreams, and\nyou\u2019re afraid people will think you are\ncorrupted or something. What one\nthing about you is different from other\npeople that you have to hide?",
+        "traits": "Mutant",
+        "effects": "Pick the top talent of any skill tree. You can\npay a Chronicle point to use this ability.\nDescribe how your mutant heritage allows\nyou to do this. See the Mutants & Heretics\nHandbook for expanded rules."
+    }
 ]

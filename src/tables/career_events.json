@@ -1,0 +1,197 @@
+[
+    {
+        "roll": 2,
+        "event": "Disabling disease.",
+        "effects": "You contract a wasting disease. The treatment will cost fifty\nassets and until then you count as having wounds equal to one\nlevel lower on the Wounds Table (page 67)."
+    },
+    {
+        "roll": 3,
+        "event": "The Brotherhood (or authorities) and the Dark Legion are both\nhunting you. What do you know, or what have you got that they\nwant?",
+        "effects": "Gain an enemy in a Heretic cult and the Brotherhood (or the\nauthorities)."
+    },
+    {
+        "roll": 4,
+        "event": "You are on the run. Who is after you, and why?",
+        "effects": "Gain an enemy in a Heretic cult, or the Brotherhood, or a\nCorporate Authority."
+    },
+    {
+        "roll": 5,
+        "event": "Powerful enemy. Somehow you managed to get yourself a\ndeadly enemy who also is quite powerful. They might be\na district authority, well connected ex-lover, or a jealous\ncolleague.",
+        "effects": "Who are they and what is their connection to you? Why are\nthey an enemy? Until you resolve this, treat this as a conflict\nand trait."
+    },
+    {
+        "roll": 6,
+        "event": "An old debt has caught up with you. Who is it to, and what will\nhappen if you do not pay?",
+        "effects": "Gain a conflict with an organisation. You have a twenty asset\ndebt that must be paid off with that organisation. Once it is\npaid the conflict is removed. This debt does not prevent\ncharacters from using earnings to make purchases."
+    },
+    {
+        "roll": 7,
+        "event": "Involved in a serious crime. Guilty or not, you are sentenced to\nhard labour and lose your job.",
+        "effects": "Add 1d6 years to age. You are Fired (see page 53). You may\nnot continue in this Primary Career. Gain a Criminal Record (see\npage 45)"
+    },
+    {
+        "roll": 8,
+        "event": "Rival within a corporation.",
+        "effects": "You have a rival within your faction with which you have a\nconflict."
+    },
+    {
+        "roll": 9,
+        "event": "Wealthy ex-lover. It did not end well, and it is your fault. They\nwill stop at nothing to make your life a misery.",
+        "effects": "Randomly select one faction using the Heritage Table with\nwhich you have an enemy. It will be a very challenging task to\nmake things up to them, but it could be a side plot for your\ncharacter."
+    },
+    {
+        "roll": 10,
+        "event": "You were called in for questioning by the authorities. What did\nthey want to know? They let you go, but on what condition?",
+        "effects": "Gain a debt to a random faction or the Brotherhood."
+    },
+    {
+        "roll": 11,
+        "event": "Criminal Record. Your name is mentioned in connection with a\ncriminal act, recorded with police and security databases, and\nyou lose your job.",
+        "effects": "You are Fired (see page 53). You may not continue in this\nPrimary Career. Gain a Criminal Record (see page 45)."
+    },
+    {
+        "roll": 12,
+        "event": "Shooting accident",
+        "effects": "Roll a random body location. You have a gunshot wound that\nhas not healed well in this location (Old War Wound trait)."
+    },
+    {
+        "roll": 13,
+        "event": "Someone has been keeping an eye on you. They always seems\nto be there when you look around. What do you think they are\ninterested in? Who are they?",
+        "effects": "Gain a trait: Under Surveillance."
+    },
+    {
+        "roll": 14,
+        "event": "You were involved in a Heretic (or criminal) plot and suffered at\nthe hands of the Inquisition (or authorities) for your crime. What\ndid they do to you, and what one thing will you remember for\nthe rest of your life?",
+        "effects": "Gain a trait: Nightmares."
+    },
+    {
+        "roll": 15,
+        "event": "They are on to you! Who are they and what have you done?",
+        "effects": "Gain a trait: Paranoia."
+    },
+    {
+        "roll": 16,
+        "event": "Someone you know is a Heretic (or criminal), but you cannot\nturn him or her in. What hold do they have over you?",
+        "effects": "Gain a trait: Blackmailed."
+    },
+    {
+        "roll": 17,
+        "event": "Whatever you did, and it was bad, you\u2019ve paid for it now \u2013 but\nthey will not give up.",
+        "effects": "Gain a trait: I am your Nemesis."
+    },
+    {
+        "roll": 18,
+        "event": "You were one of the only survivors when a ship you were\ntravelling on broke down or crashed, and rescue was a long\ntime coming.",
+        "effects": "Add one year to your career and gain a trait: Space Sickness."
+    },
+    {
+        "roll": 19,
+        "event": "You volunteered to take part in a secret medical experiment\nthat succeeded. Well, almost.",
+        "effects": "Gain trait: Curse of the Mayfly. You may roll an aging test to\nregain a Chronicle point once per session. he Aging Table can\nbe found on page 67."
+    },
+    {
+        "roll": 20,
+        "event": "What on earth did you do? You got fired!",
+        "effects": "You are Fired. You may not continue in this Primary Career (see\npage 53)."
+    },
+    {
+        "roll": 21,
+        "event": "Your lover is very wealthy and generous.",
+        "effects": "Increase Earnings Rating by one (to a maximum of five) whilst\nthey are still in love with you, but they are very demanding or\nvulnerable (Vulnerable Lover trait)."
+    },
+    {
+        "roll": 22,
+        "event": "You foiled a Heretic (or criminal) plot on your own, or with some\nfriends. Why didn\u2019t you call in the Brotherhood (or Authorities)?",
+        "effects": "Gain an enemy in a Heretic cult. Gain five assets in \u2018liberated\nequipment\u2019."
+    },
+    {
+        "roll": 23,
+        "event": "Survived a serious disaster.",
+        "effects": "Something horrendous went wrong, but you got out with your\nskin intact. You gain one favour from a useful contact, one\nenemy made during the disaster and one asset as compensation\nfor undergoing the trauma. You also have a tendency for nasty,\nsleep depriving nightmares (Nightmares trait)."
+    },
+    {
+        "roll": 24,
+        "event": "You were remembered in the will of a relative.",
+        "effects": "Gain two assets at the age of twenty. If you gain a Criminal\nRecord before then, you do not receive it."
+    },
+    {
+        "roll": 25,
+        "event": "You helped solve a serious crime.",
+        "effects": "Gain a favour with a senior figure in law enforcement in your\nfaction."
+    },
+    {
+        "roll": 26,
+        "event": "You scored the big one! You earned a big promotion.",
+        "effects": "Increase Earnings Rating by one (does not affect Social Status).\nIf your earnings are at five, gain a favour from a powerful\nexecutive instead."
+    },
+    {
+        "roll": 27,
+        "event": "Contact within a corporation.",
+        "effects": "Randomly select one corporation using the Heritage Table.\nYou have a contact who owes you a favour."
+    },
+    {
+        "roll": 28,
+        "event": "You were friends with a Heretic (or rebel). The Inquisition (or\nauthorities) requested your help in arresting them. What didn\u2019t\nyou tell them?",
+        "effects": "Gain a favour from someone in a Heretic or rebel group."
+    },
+    {
+        "roll": 29,
+        "event": "You were implicated in a Heretic (or criminal) plot. Why were\nyou involved? Why did the Brotherhood (or authorities) let you\ngo?",
+        "effects": "Gain a contact in the Brotherhood, or a random faction.\nThe contact owes you a favour."
+    },
+    {
+        "roll": 30,
+        "event": "You helped discover a Heretic temple (or criminal hideout) and\nyou were rewarded by the authorities or Brotherhood.",
+        "effects": "Gain five assets for your trouble, and the trait: Snitch."
+    },
+    {
+        "roll": 31,
+        "event": "You stumbled on a mysteriously empty Heretic (or criminal)\nhideout. You found something there before you got out. What\nwas it?",
+        "effects": "Gain an item worth five assets. This item is distinctive and\nis missed by its owner. Gain an enemy in a Heretic cult or\ncriminal gang."
+    },
+    {
+        "roll": 32,
+        "event": "You came across a body after a fight. They had something\nstrange on them. You could not resist, and took it. What is it?",
+        "effects": "Gain an item worth ten assets with a Reliability of 1."
+    },
+    {
+        "roll": 33,
+        "event": "Your lucky day! Something paid off \u2013 a lottery ticket, a risky\nbusiness venture, or a hard won contract. You get a big pay-\nout.",
+        "effects": "Gain five assets."
+    },
+    {
+        "roll": 34,
+        "event": "You saved someone from a terrible accident.",
+        "effects": "Gain an ally (favour) in a random faction, or ignore one\nsubsequent event roll result."
+    },
+    {
+        "roll": 35,
+        "event": "You volunteered to take part in a secret medical experiment\nthat succeeded. Well, almost.",
+        "effects": "Gain the first talent in the talent tree of your choice and\ndescribe how you can do this as a result of the experiment.\nHowever, sometimes you lose the plot or wake up in strange\nplaces. (Experimental Subject trait). The talent can be\npurchased again normally, allowing double the benefit."
+    },
+    {
+        "roll": 36,
+        "event": "Media Star. You have had a couple of successful releases \u2013\nwhether film or music.",
+        "effects": "You gain one free Momentum on successful Social tests, but all\nStealth tests are one difficulty greater where being recognised\nwould cause you a problem."
+    },
+    {
+        "roll": 37,
+        "event": "Disabled in a terrible accident.",
+        "effects": "All movement related skill tests are one difficulty harder, but\nyou have gained a strong will. All Mental Strength tests are one\ndifficulty lower (minimum of 1). Treatment to fix you is fifty\nassets, or you could join Cybertronic and they will fix you for\nfree, of course."
+    },
+    {
+        "roll": 38,
+        "event": "Whether it is in the boardroom, doing a deal on the streets, or\ntalking down an armed robber, you are gifted at negotiating.",
+        "effects": "All Social tests involving negotiating are one difficulty less\n(minimum 0)."
+    },
+    {
+        "roll": 39,
+        "event": "You are harbouring an AI system, perhaps in a childhood toy.\nThe A I is strongly degraded. You grew up with it and cannot\nbear to part with it.",
+        "effects": "Gain an item worth five assets that houses the AI. The AI\nprovides one Momentum to Education tests so long as the\ncharacters can freely converse with it."
+    },
+    {
+        "roll": 40,
+        "event": "Major career success.",
+        "effects": "You have been incredibly successful in this career path. Increase\nyour Earnings Rating by one, with an equivalent increase in\nSocial Status. If already of Elite status, instead gain a favour\nfrom your faction\u2019s top leadership."
+    }
+]

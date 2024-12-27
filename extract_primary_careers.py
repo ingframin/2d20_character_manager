@@ -12,14 +12,74 @@ with pdfplumber.open(pdf_file) as pdf:
     for row in tabs:
         if not row[0].isnumeric():
             continue
-        tabA.append({"roll":int(row[0]),"career":row[1]})
-        tabB.append({"roll":int(row[0]),"career":row[2]})
-        tabC.append({"roll":int(row[0]),"career":row[3]})
-        tabD.append({"roll":int(row[0]),"career":row[4]})
-    p51 = pdf.pages[51]
-    txt = p51.extract_text()
-    print(txt)
-    # print(tabA)
-    # print(tabB)
-    # print(tabC)
-    # print(tabD)
+        tabA.append({"roll":int(row[0]),"career":row[1],"attribs":{
+            "Strength":0,
+            "Physique":0,
+            "Agility":0,
+            "Awareness":0,
+            "Coordination":0,
+            "Intelligence":0,
+            "Mental Strength":0,
+            "Personality": 0
+        },
+        "mandatory skills":[],
+        "elective skills":[],
+        "talents":[],
+        "equipment":[]})
+
+        tabB.append({"roll":int(row[0]),"career":row[2],"attribs":{
+            "Strength":0,
+            "Physique":0,
+            "Agility":0,
+            "Awareness":0,
+            "Coordination":0,
+            "Intelligence":0,
+            "Mental Strength":0,
+            "Personality": 0
+        },
+        "mandatory skills":[],
+        "elective skills":[],
+        "talents":[],
+        "equipment":[]})
+
+        tabC.append({"roll":int(row[0]),"career":row[3],"attribs":{
+            "Strength":0,
+            "Physique":0,
+            "Agility":0,
+            "Awareness":0,
+            "Coordination":0,
+            "Intelligence":0,
+            "Mental Strength":0,
+            "Personality": 0
+        },
+        "mandatory skills":[],
+        "elective skills":[],
+        "talents":[],
+        "equipment":[]})
+
+        tabD.append({"roll":int(row[0]),"career":row[4],"attribs":{
+            "Strength":0,
+            "Physique":0,
+            "Agility":0,
+            "Awareness":0,
+            "Coordination":0,
+            "Intelligence":0,
+            "Mental Strength":0,
+            "Personality": 0
+        },
+        "mandatory skills":[],
+        "elective skills":[],
+        "talents":[],
+        "equipment":[]})
+    
+    with open("./src/tables/primary_career_tableA.json", "w") as f:
+        json.dump(tabA, f, indent=4)
+
+    with open("./src/tables/primary_career_tableB.json", "w") as f:
+        json.dump(tabB, f, indent=4)
+
+    with open("./src/tables/primary_career_tableC.json", "w") as f:
+        json.dump(tabC, f, indent=4)
+    
+    with open("./src/tables/primary_career_tableD.json", "w") as f:
+        json.dump(tabD, f, indent=4)

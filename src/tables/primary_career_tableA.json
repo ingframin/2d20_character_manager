@@ -1,0 +1,118 @@
+[
+    {
+        "roll": 1,
+        "career": "Unemployed",
+        "attribs": {
+            "Strength": 2,
+            "Physique": 2,
+            "Agility": 2,
+            "Awareness": 1,
+            "Coordination": 2,
+            "Intelligence": 1,
+            "Mental Strength": 1,
+            "Personality": 0
+        },
+        "mandatory skills": ["Survival","Any other"],
+        "elective skills": ["Any skill"],
+        "signature skill": "Survival",
+        "talents": ["Select one talent from any skill you possess"],
+        "equipment": [],
+        "earnings":0
+    },
+    {
+        "roll": 2,
+        "career": "Corporate worker",
+        "attribs": {
+            "Strength": 0,
+            "Physique": 1,
+            "Agility": 1,
+            "Awareness": 2,
+            "Coordination": 2,
+            "Intelligence": 1,
+            "Mental Strength": 2,
+            "Personality": 2
+        },
+        "mandatory skills": ["Lifestyle","Observation","Stealth"],
+        "elective skills": ["Persuade","Willpower","Education"],
+        "signature skill": ["Lifestyle", "Observation", "Persuade", "Education"],
+        "talents": ["Select one talent from Mandatory Skills"],
+        "earnings":1,
+        "equipment": "One corporate quality suit or a basic urban survival kit"
+    },
+    {
+        "roll": 3,
+        "career": "Technical (repairman)",
+        "attribs": {
+            "Strength": 1,
+            "Physique": 2,
+            "Agility": 2,
+            "Awareness": 2,
+            "Coordination": 1,
+            "Intelligence": 2,
+            "Mental Strength": 0,
+            "Personality": 1
+        },
+        "mandatory skills": ["Mechanics","Pilot","Thievery"],
+        "elective skills": ["Observation","Resistance","Willpower"],
+        "signature skill":["Mechanics","Pilot","Thievery","Resistance"],
+        "talents": ["Select one talent from Mandatory Skills"],
+        "earnings":1,
+        "equipment": "Basic tool kit, B&E kit (player’s choice)"
+    },
+    {
+        "roll": 4,
+        "career": "Farmer/Frontiersman",
+        "attribs": {
+            "Strength": 1,
+            "Physique": 2,
+            "Agility": 2,
+            "Awareness": 2,
+            "Coordination": 1,
+            "Intelligence": 1,
+            "Mental Strength": 2,
+            "Personality": 0
+        },
+        "mandatory skills": ["Survival","Animal Handling","Resistance"],
+        "elective skills": ["Willpower","Athletics","Thievery"],
+        "signature skill":["Survival","Animal Handling","Resistance","Athletics"],
+        "talents": ["Select one talent from any skill you possess"],
+        "earnings":1,
+        "equipment": "Colonists’ regional survival kit"
+    },
+    {
+        "roll": 5,
+        "career": "Pick result from Column A",
+        "attribs": {
+            "Strength": 0,
+            "Physique": 0,
+            "Agility": 0,
+            "Awareness": 0,
+            "Coordination": 0,
+            "Intelligence": 0,
+            "Mental Strength": 0,
+            "Personality": 0
+        },
+        "mandatory skills": [],
+        "elective skills": [],
+        "talents": [],
+        "equipment": []
+    },
+    {
+        "roll": 6,
+        "career": "Roll on Column B",
+        "attribs": {
+            "Strength": 0,
+            "Physique": 0,
+            "Agility": 0,
+            "Awareness": 0,
+            "Coordination": 0,
+            "Intelligence": 0,
+            "Mental Strength": 0,
+            "Personality": 0
+        },
+        "mandatory skills": [],
+        "elective skills": [],
+        "talents": [],
+        "equipment": []
+    }
+]

@@ -1,0 +1,110 @@
+[
+    {
+        "roll": 1,
+        "career": "Corporate Executive",
+        "attribs": {
+            "Strength": 0,
+            "Physique": 0,
+            "Agility": 0,
+            "Awareness": 0,
+            "Coordination": 0,
+            "Intelligence": 0,
+            "Mental Strength": 0,
+            "Personality": 0
+        },
+        "mandatory skills": [],
+        "elective skills": [],
+        "talents": [],
+        "equipment": []
+    },
+    {
+        "roll": 2,
+        "career": "Corporate Executive",
+        "attribs": {
+            "Strength": 0,
+            "Physique": 0,
+            "Agility": 0,
+            "Awareness": 0,
+            "Coordination": 0,
+            "Intelligence": 0,
+            "Mental Strength": 0,
+            "Personality": 0
+        },
+        "mandatory skills": [],
+        "elective skills": [],
+        "talents": [],
+        "equipment": []
+    },
+    {
+        "roll": 3,
+        "career": "Ship Crew",
+        "attribs": {
+            "Strength": 0,
+            "Physique": 0,
+            "Agility": 0,
+            "Awareness": 0,
+            "Coordination": 0,
+            "Intelligence": 0,
+            "Mental Strength": 0,
+            "Personality": 0
+        },
+        "mandatory skills": [],
+        "elective skills": [],
+        "talents": [],
+        "equipment": []
+    },
+    {
+        "roll": 4,
+        "career": "Ship Crew",
+        "attribs": {
+            "Strength": 0,
+            "Physique": 0,
+            "Agility": 0,
+            "Awareness": 0,
+            "Coordination": 0,
+            "Intelligence": 0,
+            "Mental Strength": 0,
+            "Personality": 0
+        },
+        "mandatory skills": [],
+        "elective skills": [],
+        "talents": [],
+        "equipment": []
+    },
+    {
+        "roll": 5,
+        "career": "Intelligence (operative)",
+        "attribs": {
+            "Strength": 0,
+            "Physique": 0,
+            "Agility": 0,
+            "Awareness": 0,
+            "Coordination": 0,
+            "Intelligence": 0,
+            "Mental Strength": 0,
+            "Personality": 0
+        },
+        "mandatory skills": [],
+        "elective skills": [],
+        "talents": [],
+        "equipment": []
+    },
+    {
+        "roll": 6,
+        "career": "Intelligence (operative)",
+        "attribs": {
+            "Strength": 0,
+            "Physique": 0,
+            "Agility": 0,
+            "Awareness": 0,
+            "Coordination": 0,
+            "Intelligence": 0,
+            "Mental Strength": 0,
+            "Personality": 0
+        },
+        "mandatory skills": [],
+        "elective skills": [],
+        "talents": [],
+        "equipment": []
+    }
+]

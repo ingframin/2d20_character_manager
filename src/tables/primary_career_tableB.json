@@ -117,6 +117,6 @@
         "signature skill":["Thievery", "Observation", "Stealth", "Ranged Weapons"],
         "talents": ["Select one talent from Mandatory Skills"],
         "earnings":2,
-        "equipment": "B&E kit (player’s choice) or disguise kit"
+        "equipment": "Breaking & Entry (lockpicks, pry bars, and the like) kit or disguise kit"
     }
 ]

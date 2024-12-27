@@ -1,5 +1,4 @@
 from dice import *
-from attribs import *
 from factions import *
 from random import choice
 
@@ -9,8 +8,8 @@ from random import choice
 # This is a stub to test the procedure
 def lifepath():
     lifpoints = 5
-
-    # print("Mutant Chronicles character creator")
+    
+    print("Mutant Chronicles character creator")
 
     # #Decision 1 - Select starting attributes
     # print("Please, select your starting attributes.")

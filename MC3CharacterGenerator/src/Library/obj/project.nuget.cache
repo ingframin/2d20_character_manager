@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aglNDg2dKgY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ingfr\\mc3_character_generator\\MC3CharacterGenerator\\src\\Library\\Library.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ingfr\\.nuget\\packages\\fsharp.core\\9.0.100\\fsharp.core.9.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}

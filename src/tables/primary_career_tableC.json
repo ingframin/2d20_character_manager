@@ -3,108 +3,118 @@
         "roll": 1,
         "career": "Medical (first responder)",
         "attribs": {
-            "Strength": 0,
-            "Physique": 0,
-            "Agility": 0,
-            "Awareness": 0,
+            "Strength": 1,
+            "Physique": 1,
+            "Agility": 1,
+            "Awareness": 2,
             "Coordination": 0,
-            "Intelligence": 0,
-            "Mental Strength": 0,
-            "Personality": 0
+            "Intelligence": 2,
+            "Mental Strength": 3,
+            "Personality": 1
         },
-        "mandatory skills": [],
-        "elective skills": [],
-        "talents": [],
-        "equipment": []
+        "mandatory skills": ["Treatment","Athletics","Medicine"],
+        "elective skills": ["Psycotherapy","Animal Handling","Survival"],
+        "signature skill":["Treatment","Medicine","Psycotherapy","Survival"],
+        "talents": ["Select one talent from Mandatory Skills","Psycotherapy"],
+        "earnings":3,
+        "equipment": ["Hospital class medkit and ballistic nylon medical uniform"]
     },
     {
         "roll": 2,
         "career": "Medical (first responder)",
         "attribs": {
-            "Strength": 0,
-            "Physique": 0,
-            "Agility": 0,
-            "Awareness": 0,
+            "Strength": 1,
+            "Physique": 1,
+            "Agility": 1,
+            "Awareness": 2,
             "Coordination": 0,
-            "Intelligence": 0,
-            "Mental Strength": 0,
-            "Personality": 0
+            "Intelligence": 2,
+            "Mental Strength": 3,
+            "Personality": 1
         },
-        "mandatory skills": [],
-        "elective skills": [],
-        "talents": [],
-        "equipment": []
+        "mandatory skills": ["Treatment","Athletics","Medicine"],
+        "elective skills": ["Psycotherapy","Animal Handling","Survival"],
+        "signature skill":["Treatment","Medicine","Psycotherapy","Survival"],
+        "talents": ["Select one talent from Mandatory Skills","Psycotherapy"],
+        "earnings":3,
+        "equipment": ["Hospital class medkit and ballistic nylon medical uniform"]
     },
     {
         "roll": 3,
         "career": "Academic (researcher)",
         "attribs": {
             "Strength": 0,
-            "Physique": 0,
-            "Agility": 0,
-            "Awareness": 0,
-            "Coordination": 0,
-            "Intelligence": 0,
-            "Mental Strength": 0,
-            "Personality": 0
+            "Physique": 1,
+            "Agility": 1,
+            "Awareness": 2,
+            "Coordination": 1,
+            "Intelligence": 3,
+            "Mental Strength": 2,
+            "Personality": 1
         },
-        "mandatory skills": [],
-        "elective skills": [],
-        "talents": [],
-        "equipment": []
+        "mandatory skills": ["Education","Persuade","Science"],
+        "elective skills": ["Linguistics","Education","Treatment"],
+        "signature skill":["Education","Persuade","Science","Linguistics"],
+        "talents": ["Select one talent from Mandatory Skills"],
+        "earnings":2,
+        "equipment": ["B&E kit (player’s choice) or disguise kit"]
     },
     {
         "roll": 4,
         "career": "Academic (researcher)",
         "attribs": {
             "Strength": 0,
-            "Physique": 0,
-            "Agility": 0,
-            "Awareness": 0,
-            "Coordination": 0,
-            "Intelligence": 0,
-            "Mental Strength": 0,
-            "Personality": 0
+            "Physique": 1,
+            "Agility": 1,
+            "Awareness": 2,
+            "Coordination": 1,
+            "Intelligence": 3,
+            "Mental Strength": 2,
+            "Personality": 1
         },
-        "mandatory skills": [],
-        "elective skills": [],
-        "talents": [],
-        "equipment": []
+        "mandatory skills": ["Education","Persuade","Science"],
+        "elective skills": ["Linguistics","Education","Treatment"],
+        "signature skill":["Education","Persuade","Science","Linguistics"],
+        "talents": ["Select one talent from Mandatory Skills"],
+        "earnings":2,
+        "equipment": ["B&E kit (player’s choice) or disguise kit"]
     },
     {
         "roll": 5,
         "career": "Media (reporter)",
         "attribs": {
             "Strength": 0,
-            "Physique": 0,
-            "Agility": 0,
-            "Awareness": 0,
+            "Physique": 1,
+            "Agility": 2,
+            "Awareness": 3,
             "Coordination": 0,
-            "Intelligence": 0,
-            "Mental Strength": 0,
-            "Personality": 0
+            "Intelligence": 2,
+            "Mental Strength": 1,
+            "Personality": 2
         },
-        "mandatory skills": [],
-        "elective skills": [],
-        "talents": [],
-        "equipment": []
+        "mandatory skills": ["Education","Persuade","Insight"],
+        "elective skills": ["Linguistics","Willpower","Stealth"],
+        "signature skill":["Education","Persuade","Insight","Stealth"],
+        "talents": ["Select one talent from Mandatory Skills"],
+        "equipment": ["Media kit or surveillance kit"]
     },
     {
         "roll": 6,
         "career": "Media (reporter)",
         "attribs": {
             "Strength": 0,
-            "Physique": 0,
-            "Agility": 0,
-            "Awareness": 0,
+            "Physique": 1,
+            "Agility": 2,
+            "Awareness": 3,
             "Coordination": 0,
-            "Intelligence": 0,
-            "Mental Strength": 0,
-            "Personality": 0
+            "Intelligence": 2,
+            "Mental Strength": 1,
+            "Personality": 2
         },
-        "mandatory skills": [],
-        "elective skills": [],
-        "talents": [],
-        "equipment": []
+        "mandatory skills": ["Education","Persuade","Insight"],
+        "elective skills": ["Linguistics","Willpower","Stealth"],
+        "signature skill":["Education","Persuade","Insight","Stealth"],
+        "talents": ["Select one talent from Mandatory Skills"],
+        "equipment": ["Media kit or surveillance kit"]
     }
 ]

@@ -1,11 +1,351 @@
 [
-    {"skill":"Acrobatics","talents":[
-        {"name":"GRACEFUL", "prerequisite":["Acrobatics Expertise 1"]},
-        {"name":"STRONG LEGS","prerequisite":["GRACEFUL"]},
-        {"name":"CATFALL", "prerequisite":["Strong Legs", "Acrobatics Expertise 2"]},
-        {"name":"ROLL WITH IT","prerequisite":["CATFALL"]},
-        {"name":"FREE RUNNER", "prerequisite":["GRACEFUL"]},
-        {"name":"HARD TARGET", "prerequisite":["GRACEFUL"]},
-        {"name":"UNCANNY DODGE", "prerequisite":["Hard Target", "Acrobatics Expertise 2"]}
-    ] }
+    {
+        "skill": "Acrobatics",
+        "talents": [
+            {"name": "Graceful", "prerequisite": ["Acrobatics Expertise 1"]},
+            {"name": "Strong Legs", "prerequisite": ["Graceful"]},
+            {"name": "Catfall", "prerequisite": ["Strong Legs", "Acrobatics Expertise 2"]},
+            {"name": "Roll With It", "prerequisite": ["Catfall"]},
+            {"name": "Free Runner", "prerequisite": ["Graceful"]},
+            {"name": "Hard Target", "prerequisite": ["Graceful"]},
+            {"name": "Uncanny Dodge", "prerequisite": ["Hard Target", "Acrobatics Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Animal Handling",
+        "talents": [
+            {"name": "Empathetic", "prerequisite": ["Animal Handling Expertise 1"]},
+            {"name": "Recognise Cues", "prerequisite": ["Empathetic"]},
+            {"name": "Firm Command", "prerequisite": ["Recognise Cues", "Animal Handling Expertise 2"]},
+            {"name": "Smells Right", "prerequisite": ["Firm Command"]},
+            {"name": "Strong Rider", "prerequisite": ["Empathetic"]},
+            {"name": "Symbiosis", "prerequisite": ["Empathetic"]},
+            {"name": "Animal Healer", "prerequisite": ["Symbiosis", "Animal Handling Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Athletics",
+        "talents": [
+            {"name": "Rigorous Training", "prerequisite": ["Athletics Expertise 1"]},
+            {"name": "Leverage", "prerequisite": ["Rigorous Training"]},
+            {"name": "Irresistible Force", "prerequisite": ["Leverage", "Athletics Expertise 2"]},
+            {"name": "Strong Grip", "prerequisite": ["Irresistible Force"]},
+            {"name": "Strong Swimmer", "prerequisite": ["Rigorous Training"]},
+            {"name": "Cliff Dweller", "prerequisite": ["Rigorous Training"]},
+            {"name": "Wall Crawler", "prerequisite": ["Cliff Dweller", "Athletics Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Close Combat",
+        "talents": [
+            {"name": "No Mercy", "prerequisite": ["Close Combat Expertise 1"]},
+            {"name": "Deflection", "prerequisite": ["No Mercy"]},
+            {"name": "Riposte", "prerequisite": ["Deflection", "Close Combat Expertise 2"]},
+            {"name": "Reflexive Block", "prerequisite": ["Riposte"]},
+            {"name": "Quick Draw", "prerequisite": ["No Mercy"]},
+            {"name": "Specialist", "prerequisite": ["No Mercy"]},
+            {"name": "Weapon Master", "prerequisite": ["Specialist", "Close Combat Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Command",
+        "talents": [
+            {"name": "Professional", "prerequisite": ["Command Expertise 1"]},
+            {"name": "Air Of Authority", "prerequisite": ["Professional"]},
+            {"name": "Commanding Presence", "prerequisite": ["Air Of Authority", "Command Expertise 2"]},
+            {"name": "Minions", "prerequisite": ["Commanding Presence"]},
+            {"name": "Font Of Courage", "prerequisite": ["Professional"]},
+            {"name": "Group Dynamics", "prerequisite": ["Professional"]},
+            {"name": "Coordinator", "prerequisite": ["Group Dynamics", "Command Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Education",
+        "talents": [
+            {"name": "Disciplined Student", "prerequisite": ["Education Expertise 1"]},
+            {"name": "Know Factions", "prerequisite": ["Disciplined Student"]},
+            {"name": "Recognise Motives", "prerequisite": ["Know Factions", "Education Expertise 2"]},
+            {"name": "Counter Offer", "prerequisite": ["Recognise Motives"]},
+            {"name": "Newsmonger", "prerequisite": ["Disciplined Student"]},
+            {"name": "Spot Context", "prerequisite": ["Disciplined Student"]},
+            {"name": "Play The Part", "prerequisite": ["Spot Context", "Education Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Gunnery",
+        "talents": [
+            {"name": "Cool Hand", "prerequisite": ["Gunnery Expertise 1"]},
+            {"name": "Natural Calculator", "prerequisite": ["Cool Hand"]},
+            {"name": "Duplicate Shot", "prerequisite": ["Natural Calculator", "Gunnery Expertise 2"]},
+            {"name": "Lethal Barrage", "prerequisite": ["Duplicate Shot"]},
+            {"name": "Expert Spotter", "prerequisite": ["Cool Hand"]},
+            {"name": "Crew Chief", "prerequisite": ["Cool Hand"]},
+            {"name": "Lightning Crew", "prerequisite": ["Crew Chief", "Gunnery Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Heavy Weapons",
+        "talents": [
+            {"name": "Rain Of Fire", "prerequisite": ["Heavy Weapons Expertise 1"]},
+            {"name": "Big Boom", "prerequisite": ["Rain Of Fire"]},
+            {"name": "Fire For Effect", "prerequisite": ["Big Boom"]},
+            {"name": "Booya!", "prerequisite": ["Fire For Effect", "Heavy Weapons Expertise 2"]},
+            {"name": "Steady Arms", "prerequisite": ["Rain Of Fire"]},
+            {"name": "Smooth Reload", "prerequisite": ["Rain Of Fire"]},
+            {"name": "Suppressive", "prerequisite": ["Smooth Reload", "Heavy Weapons Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Insight",
+        "talents": [
+            {"name": "Sixth Sense", "prerequisite": ["Insight Expertise 1"]},
+            {"name": "Unnatural Sensitivity", "prerequisite": ["Sixth Sense"]},
+            {"name": "Expanded Senses", "prerequisite": ["Unnatural Sensitivity", "Insight Expertise 2"]},
+            {"name": "Know The Signs", "prerequisite": ["Expanded Senses"]},
+            {"name": "New Perspective", "prerequisite": ["Sixth Sense"]},
+            {"name": "Pierce The Veil", "prerequisite": ["Sixth Sense"]},
+            {"name": "Avoid Corruption", "prerequisite": ["Pierce The Veil", "Insight Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Lifestyle",
+        "talents": [
+            {"name": "Good Impression", "prerequisite": ["Lifestyle Expertise 1"]},
+            {"name": "Network", "prerequisite": ["Good Impression"]},
+            {"name": "Reallocate Asset", "prerequisite": ["Network", "Lifestyle Expertise 2"]},
+            {"name": "High Command", "prerequisite": ["Reallocate Asset"]},
+            {"name": "Silver Spoon", "prerequisite": ["Good Impression"]},
+            {"name": "Bribe", "prerequisite": ["Good Impression"]},
+            {"name": "Big Spender", "prerequisite": ["Bribe", "Lifestyle Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Linguistics",
+        "talents": [
+            {"name": "Ear For Language", "prerequisite": ["Linguistics Expertise 1"]},
+            {"name": "Puzzler", "prerequisite": ["Ear For Language"]},
+            {"name": "Encrypter", "prerequisite": ["Puzzler", "Linguistics Expertise 2"]},
+            {"name": "In Plain Sight", "prerequisite": ["Encrypter"]},
+            {"name": "Way With Words", "prerequisite": ["Ear For Language"]},
+            {"name": "Intuitive Communicator", "prerequisite": ["Ear For Language"]},
+            {"name": "Instant Translator", "prerequisite": ["Intuitive Communicator", "Linguistics Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Mechanics",
+        "talents": [
+            {"name": "Natural Engineer", "prerequisite": ["Mechanics Expertise 1"]},
+            {"name": "Design Savant", "prerequisite": ["Natural Engineer"]},
+            {"name": "Repurpose Device", "prerequisite": ["Design Savant", "Mechanics Expertise 2"]},
+            {"name": "Assembly Line", "prerequisite": ["Repurpose Device"]},
+            {"name": "Snap Diagnosis", "prerequisite": ["Natural Engineer"]},
+            {"name": "Grease Monkey", "prerequisite": ["Natural Engineer"]},
+            {"name": "Jury Rig", "prerequisite": ["Grease Monkey", "Mechanics Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Medicine",
+        "talents": [
+            {"name": "Physician", "prerequisite": ["Medicine Expertise 1"]},
+            {"name": "Therapeutic Caregiver", "prerequisite": ["Physician"]},
+            {"name": "Healer", "prerequisite": ["Therapeutic Caregiver", "Medicine Expertise 2"]},
+            {"name": "Trauma Surgeon", "prerequisite": ["Healer"]},
+            {"name": "Field Dressing", "prerequisite": ["Physician"]},
+            {"name": "Find Antidote", "prerequisite": ["Physician"]},
+            {"name": "Bolster Immunity", "prerequisite": ["Find Antidote", "Medicine Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Mysticism",
+        "talents": [
+            {"name": "Spiritual Understanding", "prerequisite": ["Mysticism Expertise 1"]},
+            {"name": "Dark Knowledge", "prerequisite": ["Spiritual Understanding"]},
+            {"name": "Dark Defence", "prerequisite": ["Dark Knowledge", "Mysticism Expertise 2"]},
+            {"name": "Slayer Of Darkness", "prerequisite": ["Dark Defence"]},
+            {"name": "Ritualist", "prerequisite": ["Spiritual Understanding"]},
+            {"name": "Spiritual Armour", "prerequisite": ["Spiritual Understanding"]},
+            {"name": "Mystic Ward", "prerequisite": ["Spiritual Armour", "Mysticism Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Observation",
+        "talents": [
+            {"name": "Sharp Senses", "prerequisite": ["Observation Expertise 1"]},
+            {"name": "Quick Survey", "prerequisite": ["Sharp Senses"]},
+            {"name": "Battlefield Perception", "prerequisite": ["Quick Survey", "Observation Expertise 2"]},
+            {"name": "Find the Weak Spot", "prerequisite": ["Battlefield Perception"]},
+            {"name": "Sense Memory", "prerequisite": ["Sharp Senses"]},
+            {"name": "Toss the Room", "prerequisite": ["Sharp Senses"]},
+            {"name": "Subtle Examination", "prerequisite": ["Toss the Room", "Observation Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Persuade",
+        "talents": [
+            {"name": "Charismatic", "prerequisite": ["Persuade Expertise 1"]},
+            {"name": "Strong-Armed Tactics", "prerequisite": ["Charismatic"]},
+            {"name": "Haggler", "prerequisite": ["Strong-Armed Tactics", "Persuade Expertise 2"]},
+            {"name": "Obfuscation", "prerequisite": ["Haggler"]},
+            {"name": "Bedroom Eyes", "prerequisite": ["Charismatic"]},
+            {"name": "Naturally Charming", "prerequisite": ["Charismatic"]},
+            {"name": "Remorseless", "prerequisite": ["Naturally Charming", "Persuade Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Pilot",
+        "talents": [
+            {"name": "Ace", "prerequisite": ["Pilot Expertise 1"]},
+            {"name": "Born to the Wheel", "prerequisite": ["Ace"]},
+            {"name": "Keep Trucking", "prerequisite": ["Born to the Wheel", "Pilot Expertise 2"]},
+            {"name": "Ramming Speed", "prerequisite": ["Keep Trucking"]},
+            {"name": "Storm Breaker", "prerequisite": ["Ace"]},
+            {"name": "Push the Envelope", "prerequisite": ["Ace"]},
+            {"name": "Winged Victory", "prerequisite": ["Push the Envelope", "Pilot Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Psychotherapy",
+        "talents": [
+            {"name": "Counsellor", "prerequisite": ["Psychotherapy Expertise 1"]},
+            {"name": "Psychologist", "prerequisite": ["Counsellor"]},
+            {"name": "Psycho-surgeon", "prerequisite": ["Psychologist", "Medicine Expertise 2"]},
+            {"name": "Alienist", "prerequisite": ["Psycho-surgeon"]},
+            {"name": "Psychoanalyst", "prerequisite": ["Counsellor"]},
+            {"name": "Cognitive Therapist", "prerequisite": ["Counsellor"]},
+            {"name": "Remote Specialist", "prerequisite": ["Cognitive Therapist", "Psychotherapy Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Ranged Weapons",
+        "talents": [
+            {"name": "Sniper", "prerequisite": ["Ranged Weapons Expertise 1"]},
+            {"name": "Gun in Hand", "prerequisite": ["Sniper"]},
+            {"name": "Speed Loader", "prerequisite": ["Gun in Hand", "Ranged Weapons Expertise 2"]},
+            {"name": "Double Tap", "prerequisite": ["Speed Loader"]},
+            {"name": "Through and Through", "prerequisite": ["Sniper"]},
+            {"name": "Clear Shot", "prerequisite": ["Sniper"]},
+            {"name": "Precise Targeting", "prerequisite": ["Clear Shot", "Ranged Weapons Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Resistance",
+        "talents": [
+            {"name": "Hardy", "prerequisite": ["Resistance Expertise 1"]},
+            {"name": "Just a Scratch", "prerequisite": ["Hardy"]},
+            {"name": "Rub Some Dirt on It", "prerequisite": ["Resilient", "Resistance Expertise 2"]},
+            {"name": "Quick Healer", "prerequisite": ["Rub Some Dirt on It"]},
+            {"name": "Resilient", "prerequisite": ["Hardy"]},
+            {"name": "Strong Liver", "prerequisite": ["Hardy"]},
+            {"name": "Fever Dreams", "prerequisite": ["Strong Liver", "Resistance Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Science",
+        "talents": [
+            {"name": "Operator", "prerequisite": ["Science Expertise 1"]},
+            {"name": "Technician", "prerequisite": ["Operator"]},
+            {"name": "Researcher", "prerequisite": ["Technician", "Science Expertise 2"]},
+            {"name": "Scientist", "prerequisite": ["Researcher"]},
+            {"name": "Comptographer", "prerequisite": ["Operator"]},
+            {"name": "Biologist", "prerequisite": ["Operator"]},
+            {"name": "Bioengineer", "prerequisite": ["Biologist", "Science Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Space",
+        "talents": [
+            {"name": "Astronaut", "prerequisite": ["Space Expertise 1"]},
+            {"name": "Trans-atmospheric", "prerequisite": ["Astronaut"]},
+            {"name": "Rocket Jockey", "prerequisite": ["Trans-atmospheric", "Space Expertise 2"]},
+            {"name": "Starfighter", "prerequisite": ["Rocket Jockey"]},
+            {"name": "Alone in the Night", "prerequisite": ["Astronaut"]},
+            {"name": "Navigation", "prerequisite": ["Astronaut"]},
+            {"name": "Fleet Action", "prerequisite": ["Navigation", "Space Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Stealth",
+        "talents": [
+            {"name": "Scout", "prerequisite": ["Stealth Expertise 1"]},
+            {"name": "Living Shadow", "prerequisite": ["Scout"]},
+            {"name": "Camouflage", "prerequisite": ["Living Shadow", "Stealth Expertise 2"]},
+            {"name": "Insertion", "prerequisite": ["Camouflage"]},
+            {"name": "Obscure Trail", "prerequisite": ["Scout"]},
+            {"name": "Disguise", "prerequisite": ["Scout"]},
+            {"name": "Impersonation", "prerequisite": ["Disguise", "Stealth Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Survival",
+        "talents": [
+            {"name": "Self Sufficient", "prerequisite": ["Survival Expertise 1"]},
+            {"name": "Risks", "prerequisite": ["Self Sufficient"]},
+            {"name": "Remedies", "prerequisite": ["Risks", "Survival Expertise 2"]},
+            {"name": "Rewards", "prerequisite": ["Remedies"]},
+            {"name": "Tracker", "prerequisite": ["Self Sufficient"]},
+            {"name": "Scrounger", "prerequisite": ["Self Sufficient"]},
+            {"name": "Provider", "prerequisite": ["Scrounger", "Survival Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Thievery",
+        "talents": [
+            {"name": "Life of Crime", "prerequisite": ["Thievery Expertise 1"]},
+            {"name": "Spot the Mark", "prerequisite": ["Life of Crime"]},
+            {"name": "Petty Larceny", "prerequisite": ["Spot the Mark", "Thievery Expertise 2"]},
+            {"name": "Misdirection", "prerequisite": ["Petty Larceny"]},
+            {"name": "Know the Risks", "prerequisite": ["Life of Crime"]},
+            {"name": "Inconspicuous", "prerequisite": ["Know the Risks", "Thievery Expertise 2"]},
+            {"name": "Bypass Security", "prerequisite": ["Life of Crime"]},            
+            {"name": "Manipulate the Odds", "prerequisite": ["Bypass Security", "Thievery Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Treatment",
+        "talents": [
+            {"name": "First Responder", "prerequisite": ["Treatment Expertise 1"]},
+            {"name": "Ration Meds", "prerequisite": ["First Responder"]},
+            {"name": "Empathic Healer", "prerequisite": ["Ration Meds", "Treatment Expertise 2"]},
+            {"name": "Flexible Techniques", "prerequisite": ["Empathic Healer"]},
+            {"name": "Avoid Danger", "prerequisite": ["First Responder"]},
+            {"name": "Comforting Words", "prerequisite": ["First Responder"]},
+            {"name": "Reassuring Guidance", "prerequisite": ["Comforting Words", "Treatment Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Unarmed Combat",
+        "talents": [
+            {"name": "Martial Artist", "prerequisite": ["Unarmed Combat Expertise 1"]},
+            {"name": "Quick Grab", "prerequisite": ["Martial Artist"]},
+            {"name": "Sensitive Area", "prerequisite": ["Quick Grab", "Unarmed Combat Expertise 2"]},
+            {"name": "Down Target", "prerequisite": ["Sensitive Area"]},
+            {"name": "Block the Arm", "prerequisite": ["Martial Artist"]},
+            {"name": "Avoidance", "prerequisite": ["Martial Artist"]},
+            {"name": "Flow Like Water", "prerequisite": ["Avoidance", "Unarmed Combat Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Vacuum",
+        "talents": [
+            {"name": "Colonist", "prerequisite": ["Vacuum Expertise 1"]},
+            {"name": "Slow Metabolism", "prerequisite": ["Colonist"]},
+            {"name": "Dietary Tolerance", "prerequisite": ["Slow Metabolism", "Vacuum Expertise 2"]},
+            {"name": "Radiation Resistance", "prerequisite": ["Dietary Tolerance"]},
+            {"name": "Spacewalk", "prerequisite": ["Colonist"]},
+            {"name": "Gloved Finesse", "prerequisite": ["Colonist"]},
+            {"name": "Gravity Savant", "prerequisite": ["Gloved Finesse", "Vacuum Expertise 2"]}
+        ]
+    },
+    {
+        "skill": "Willpower",
+        "talents": [
+            {"name": "Stubborn", "prerequisite": ["Willpower Expertise 1"]},
+            {"name": "Irrepressible", "prerequisite": ["Stubborn"]},
+            {"name": "Courageous", "prerequisite": ["Irrepressible", "Willpower Expertise 2"]},
+            {"name": "Out of Darkness", "prerequisite": ["Courageous"]},
+            {"name": "Jaded", "prerequisite": ["Stubborn"]},
+            {"name": "Wary", "prerequisite": ["Stubborn"]},
+            {"name": "Psychic Hole", "prerequisite": ["Wary", "Willpower Expertise 2"]}
+        ]
+    }
 ]
